@@ -14,10 +14,17 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-resume}
+\documentclass[11pt, letterpaper]{awesome-resume}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -93,12 +100,17 @@
 \input{resume/education.tex}
 \input{resume/employment.tex}
 \input{resume/research.tex}
-\input{resume/teaching.tex}
-\input{resume/service.tex}
-\input{resume/projects.tex}
-\input{resume/skills.tex}
+%\input{resume/teaching.tex}
+%\input{resume/service.tex}
+
+\cvsection{Relevant Projects}
+\begin{cventries}
+\input{resume/projects-datascience.tex}
+\end{cventries}
+
+%\input{resume/skills.tex}
 \input{resume/honors.tex}
-\input{resume/courses.tex}
+%\input{resume/courses.tex}
 
 
 %-------------------------------------------------------------------------------
