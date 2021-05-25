@@ -12,6 +12,16 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
+\newif \ifwebdev
+\newif \ifml
+\newif \ifios
+\newif \ifdesktop
+
+\webdevfalse
+\mlfalse
+\iosfalse
+\desktoptrue
+
 \hypersetup{
     colorlinks=true,
     urlcolor=blue
@@ -91,9 +101,12 @@
 \input{sections/employment}
 \input{sections/skills}
 \input{sections/projects}
+
+\ifml
 \input{sections/research}
 \input{sections/talks}
 \input{sections/service}
+\fi
 
 %-------------------------------------------
 \end{document}
