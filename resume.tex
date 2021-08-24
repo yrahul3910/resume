@@ -12,15 +12,62 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
+% Higher level conditionals
+\newif \ifsoftware
+\newif \ifmaster
+
+% Base conditionals
 \newif \ifwebdev
 \newif \ifml
 \newif \ifios
 \newif \ifdesktop
 
+% Set the base conditionals
 \webdevfalse
-\mlfalse
+\mltrue
 \iosfalse
-\desktoptrue
+\desktopfalse
+
+% Set the higher level conditionals
+\softwarefalse
+\mastertrue
+
+% Let the logic trickle down
+\ifsoftware
+    \desktoptrue
+    \iostrue
+    \webdevtrue
+\fi
+
+\ifmaster
+    \softwaretrue
+    \mltrue
+\fi
+
+% And now, assign the role bottom-up
+\newcommand{\role}{}
+\newif\ifroleset
+\rolesettrue
+\ifwebdev
+    \renewcommand{\role}{Web Developer}
+\fi
+\ifml
+    \renewcommand{\role}{ML Engineer}
+\fi
+\ifios
+    \renewcommand{\role}{iOS Developer}
+\fi
+\ifdesktop
+    \renewcommand{\role}{Desktop Developer}
+\fi
+\ifsoftware
+    \renewcommand{\role}{Software Developer}
+\fi
+\ifmaster
+    \renewcommand{\role}{}
+    \rolesetfalse
+\fi
+
 
 \hypersetup{
     colorlinks=true,
@@ -89,21 +136,24 @@
 
 
 \begin{document}
+\thispagestyle{empty}  % Skip header on page 1
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Rahul Yedida} &  \url{r.yedida@pm.me}\\
+  \textbf{\Large Rahul Yedida}\ifroleset,\fi \role &  \url{r.yedida@pm.me}\\
   \href{https://ryedida.me}{Website}  :: \href{https://github.com/yrahul3910}{GitHub}  :: \href{https://linkedin.com/in/rahul-yedida}{LinkedIn} & (919)-636-8327 \\
 \end{tabular*}
 
 
 \input{sections/education}
 \input{sections/employment}
-\input{sections/skills}
-\input{sections/projects}
-
 \ifml
 \input{sections/research}
+\fi
+\input{sections/projects}
+\input{sections/skills}
+
+\ifml
 \input{sections/talks}
 \input{sections/service}
 \fi
