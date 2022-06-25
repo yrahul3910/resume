@@ -22,6 +22,12 @@
 \newif \ifios
 \newif \ifdesktop
 
+% How to use these conditionals:
+% - For a master CV, set \mastertrue.
+% - For a ML Engineer/Data Scientist CV, set \masterfalse, and \mltrue
+% - For a Software Developer CV, set \masterfalse, \softwaretrue
+% - For a Web Developer CV, set \masterfalse, \webdevtrue
+
 % Set the base conditionals
 \webdevfalse
 \mltrue
@@ -30,17 +36,21 @@
 
 % Set the higher level conditionals
 \softwarefalse
-\mastertrue
+\masterfalse
 
 % Let the logic trickle down
+\ifmaster
+    \softwaretrue
+\fi
+
 \ifsoftware
     \desktoptrue
     \iostrue
     \webdevtrue
+    \mlfalse
 \fi
 
 \ifmaster
-    \softwaretrue
     \mltrue
 \fi
 
@@ -49,19 +59,19 @@
 \newif\ifroleset
 \rolesettrue
 \ifwebdev
-    \renewcommand{\role}{Web Developer}
+    \renewcommand{\role}{ Web Developer}
 \fi
 \ifml
-    \renewcommand{\role}{ML Engineer}
+    \renewcommand{\role}{ Machine Learning Engineer}
 \fi
 \ifios
-    \renewcommand{\role}{iOS Developer}
+    \renewcommand{\role}{ iOS Developer}
 \fi
 \ifdesktop
-    \renewcommand{\role}{Desktop Developer}
+    \renewcommand{\role}{ Desktop Developer}
 \fi
 \ifsoftware
-    \renewcommand{\role}{Software Developer}
+    \renewcommand{\role}{ Software Developer}
 \fi
 \ifmaster
     \renewcommand{\role}{}
@@ -117,7 +127,7 @@
 }
 
 \newcommand{\addExtraPosition}[2]{
-  \vspace{5pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \vspace{1pt}\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -140,8 +150,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Rahul Yedida}\ifroleset,\fi \role &  \url{r.yedida@pm.me}\\
-  \href{https://ryedida.me}{Website}  :: \href{https://github.com/yrahul3910}{GitHub}  :: \href{https://linkedin.com/in/rahul-yedida}{LinkedIn} & (919)-636-8327 \\
+  \textbf{\Large Rahul Yedida}\ifroleset,\fi \role &  \url{rahul@ryedida.me}\\
+  \href{https://ryedida.me}{Website}  :: \href{https://github.com/yrahul3910}{GitHub}  :: \href{https://linkedin.com/in/rahul-yedida}{LinkedIn}  ::
+  \href{https://scholar.google.com/citations?user=0lP2AvkAAAAJ&hl=en}{Google Scholar} & +1 (206) 660-7542 \\
 \end{tabular*}
 
 
@@ -149,14 +160,11 @@
 \input{sections/employment}
 \ifml
 \input{sections/research}
+\input{sections/funding}
 \fi
+\input{sections/honors}
 \input{sections/projects}
 \input{sections/skills}
-
-\ifml
-\input{sections/talks}
-\input{sections/service}
-\fi
 
 %-------------------------------------------
 \end{document}
