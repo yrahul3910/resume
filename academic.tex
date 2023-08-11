@@ -1,6 +1,11 @@
 \documentclass[letterpaper,11pt]{article}
 
-\input{preamble.tex}
+\input{util/preamble}
+
+\IncludeIndustryExpfalse
+
+\input{util/computeRole}
+\input{util/setup}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -8,21 +13,7 @@
 
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Rahul Yedida} &  \url{r.yedida@pm.me}\\
-  \href{https://ryedida.me}{Website}  :: \href{https://github.com/yrahul3910}{GitHub}  :: \href{https://linkedin.com/in/rahul-yedida}{LinkedIn}  ::
-  \href{https://scholar.google.com/citations?user=0lP2AvkAAAAJ&hl=en}{Google Scholar} & (919)-636-8327 \\
-\end{tabular*}
-
-
-\input{sections/education}
-\input{sections/employment}
-\input{sections/research}
-\input{sections/funding}
-\input{sections/honors}
-\input{sections/talks}
-\input{sections/service}
+\input{util/main}
 
 %-------------------------------------------
 \end{document}

@@ -1,0 +1,40 @@
+% Let the logic trickle down
+\ifmaster
+    \softwaretrue
+\fi
+
+\ifsoftware
+    \desktoptrue
+    \iostrue
+    \webdevtrue
+    \mlfalse
+\fi
+
+\ifmaster
+    \mltrue
+\fi
+
+% And now, assign the role bottom-up
+\newcommand{\role}{}
+\newif\ifroleset
+\rolesettrue
+\ifwebdev
+    \renewcommand{\role}{ Web Developer}
+\fi
+\ifml
+    %\renewcommand{\role}{ }
+    \rolesetfalse
+\fi
+\ifios
+    \renewcommand{\role}{ iOS Developer}
+\fi
+\ifdesktop
+    \renewcommand{\role}{ Desktop Developer}
+\fi
+\ifsoftware
+    \renewcommand{\role}{ Software Developer}
+\fi
+\ifmaster
+    \renewcommand{\role}{}
+    \rolesetfalse
+\fi
