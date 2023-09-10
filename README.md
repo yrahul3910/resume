@@ -1,3 +1,3 @@
-# Resume
+# LaTeX Resume Template
 
-This repository contains my academic CV and business resume.
+This implements the necessary preamble and template spec file for [this MIT-licensed template](https://github.com/rajnikant7008/Latex-Resume-Template/tree/master).

@@ -1,0 +1,348 @@
+{
+    "personalInfo": {
+        "name": "Rahul Yedida",
+        "suffix": "",
+        "contact": {
+            "email": "hello@ryedida.me",
+            "phone": "+1 (206) 660-7542"
+        },
+        "links": [{
+            "display": "Website",
+            "url": "https://ryedida.me"
+        }, {
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910"
+        }, {
+            "display": "LinkedIn",
+            "url": "https://www.linkedin.com/in/rahul-yedida/"
+        }, {
+            "display": "Google Scholar",
+            "url": "https://scholar.google.com/citations?user=0lP2AvkAAAAJ&hl=en"
+        }]
+    },
+    "education": [{
+        "institution": "North Carolina State University",
+        "location": "Raleigh, NC",
+        "degree": "Ph.D. Computer Science -- Advisor: Dr. Tim Menzies",
+        "dates": "Aug 2019 - Exp. Dec 2023"
+    }, {
+        "institution": "PES University",
+        "location": "Bangalore, India",
+        "degree": "B.E. Computer Science",
+        "dates": "Aug 2015 - May 2019"
+    }],
+    "employment": [{
+        "organization": "Amazon",
+        "location": "New York, NY",
+        "positions": [{
+            "position": "Software Dev Engineer Intern",
+            "dates": "May 2023 - Aug 2023",
+            "details": [
+                "Implemented profile locks for Prime Video on Echo Show devices.",
+                "\\textbf{Technology:} React Native, TypeScript"
+            ],
+            "tags": ["sde"]
+        }, {
+            "position": "Software Dev Engineer Intern",
+            "dates": "May 2022 - Jul 2022",
+            "details": [
+                "Developed a full-stack system to publish announcements in socrecards used by delivery service partners (DSPs).",
+                "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DyanmoDB, Java Spring"
+            ],
+            "tags": ["sde"]
+        }]
+    }, {
+        "organization": "North Carolina State University",
+        "location": "Raleigh, NC",
+        "positions": [{
+            "position": "Graduate Teaching Assistant",
+            "dates": "Aug 2022 - Apr 2023",
+            "details": [
+                "TA (with 3 others) for 119 students for a graduate Automated Software Engineering course.",
+                "TA (with 4 others) for 243 students for a graduate Software Engineering course."
+            ],
+            "tags": ["ml"]
+        }, {
+            "position": "Graduate Research Assistant",
+            "dates": "Jan 2020 - May 2022",
+            "details": [
+                "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC)",
+                "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results on static code warnings analysis using 10\\% of the labels."
+            ],
+            "tags": ["ml"]
+        }]
+    }],
+    "projects": [{
+        "title": "Programmable Resumes",
+        "dates": "Aug 2023 - Present",
+        "skills": ["Python"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/programmable-resumes"
+        }],
+        "details": [
+            "Developed a specification and implementation for modular, customizable resumes with support for two popular LaTeX templates."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "pysh",
+        "dates": "May 2021 - Present",
+        "skills": ["C++", "TMLanguage"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/pysh"
+        }],
+        "details": [
+            "Developed a superset of Python that allows running Shell code natively, with a VS Code syntax highlighting extension."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "RAISE",
+        "dates": "Aug 2020 - Present",
+        "skills": ["Python", "Keras"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/raise"
+        }, {
+            "display": "PyPI",
+            "url": "https://pypi.org/project/raise-utils/"
+        }],
+        "details": [
+            "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 19k times."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "Google/Meta Data Mining",
+        "dates": "Feb 2021 - May 2021",
+        "skills": ["Python", "Keras"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/google-takeout-data-mining"
+        }],
+        "details": [
+            "Data science project to use Google Takeout and Meta user data to suggest products to advertise to a user from Amazon best-sellers using DistilGPT-2, and achieved 0.6 F-1 score."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "Threaded Discussions Website",
+        "dates": "Feb 2021 - Jun 2021",
+        "skills": ["MongoDB", "Node.js", "React"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/threaded-discussions"
+        }],
+        "details": [
+            "Companion website for video calls that allows for Reddit-style, threaded discussions."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "NearConnect",
+        "dates": "Nov 2020 - Mar 2021",
+        "skills": ["iOS", "SwiftUI"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/socialqr"
+        }, {
+            "display": "App Store",
+            "url": "https://apps.apple.com/us/app/nearconnect/id1547157546"
+        }],
+        "details": [
+            "iOS app to connect with people nearby using multicast peer-to-peer connections."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Novel Drug Repurposing Hypotheses",
+        "dates": "Oct 2019 - Feb 2020",
+        "skills": ["Python", "PyTorch"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/drug-repurposing-textmining"
+        }],
+        "details": [
+            "Identified novel drug repurposing hypotheses using text mining of radio transcripts, and verified results."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "Personalized Chatbot",
+        "dates": "May 2019",
+        "skills": ["Python", "Keras"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/custom-chatbot"
+        }],
+        "details": [
+            "Fine-tuned a GPT-2 345M model on 730k messages from Telegram logs to create a personalized chatbot."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "Intelligent Tutoring System",
+        "dates": "Sep 2018 - May 2019",
+        "skills": ["Python"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/student-modeling-project"
+        }],
+        "details": [
+            "Implemented an Intelligent Tutoring System backend using Bayesian Knowledge Tracing and a novel question selection algorithm."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "Human Activity Data Project",
+        "dates": "Oct 2018 - Nov 2018",
+        "skills": ["Python", "Keras"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/ActivityDataProject"
+        }],
+        "details": [
+            "Collected personal activity data for 9 months, grouped tasks into 21 categories. Analyzed most productive hours of the day."
+        ],
+        "tags": ["ml"]
+    }, {
+        "title": "JournalBear",
+        "dates": "Jan 2017 - Feb 2019",
+        "skills": ["JavaScript, Electron"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/journal"
+        }, {
+            "display": "Softpedia",
+            "url": "https://www.softpedia.com/get/Office-tools/Diary-Organizers-Calendar/JournalBear.shtml"
+        }],
+        "details": [
+            "Cross-platform journal application with AES-256 encryption. Rated 4/5 by Softpedia."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Results Scraper",
+        "dates": "Mar 2018 - Aug 2018",
+        "skills": ["MongoDB", "Express.js", "React", "Node.js"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/results-scraper-node"
+        }],
+        "details": [
+            "Website for scraping university examination results and displaying charts and printable reports, with caching."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Video Sharing Website",
+        "dates": "Oct 2017 - Dec 2017",
+        "skills": ["MySQL", "Express.js", "React", "Node.js", "Sass", "Elasticsearch"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/video-sharing-site"
+        }],
+        "details": [
+            "Simplified implementation of a video-sharing website with subscriptions and custom searching."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Xtreme Calculations",
+        "dates": "Apr 2013 - Oct 2017",
+        "skills": ["VB.NET", "Python"],
+        "links": [{
+            "display": "Softpedia",
+            "url": "https://www.softpedia.com/get/Science-CAD/Xtreme-Calculations.shtml"
+        }],
+        "details": [
+            "Windows math software to solve scientific and mathematical problems, with over 30k downloads across multiple sites."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Video Indexer",
+        "dates": "Jun 2017 - Sep 2017",
+        "skills": ["C++", "Qt", "Sphinx"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/video-indexer"
+        }],
+        "details": [
+            "Cross-platform desktop application to detect the time(s) a given keyword was spoken in a video."
+        ],
+        "tags": ["sde"]
+    }, {
+        "title": "Web development projects",
+        "dates": "Jan 2017 - Nov 2017",
+        "skills": ["MongoDB", "Express.js", "React", "Node.js", "Sass", "D3.js"],
+        "links": [{
+            "display": "CodePen",
+            "url": "https://codepen.io/yrahul"
+        }],
+        "details": [
+            "Projects include URL shortener, rogue-like dungeon crawler game, voting application, Simon game, land surface temperature heatmap, and mapping meteorite impacts across the globe."
+        ],
+        "tags": ["sde"]
+    }],
+    "publications": [
+        "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
+        "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, (01), 1-17}.",
+        "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications}.",
+        "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR). IEEE, 2022.}",
+        "\\textbf{Yedida, R.}, \\& Saha, S. (2021). Beginning with Machine Learning: A Comprehensive Primer. \\textit{The European Physical Journal Special Topics: 1-82.}",
+        "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3073242}",
+        "Yang, X., Chen, J., \\textbf{Yedida, R.}, Yu, Z., \\& Menzies, T. (2021). Learning to recognize actionable static code warnings (is intrinsically easy). \\textit{Empirical Software Engineering, 26(3), 1-24}.",
+        "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3079841}",
+        "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2021). Lessons learned from hyper-parameter tuning for microservice candidate identification. \\textit{Proceedings of the thirty-sixth IEEE/ACM International Conference on Automated Software Engineering (ASE)}",
+        "Saha, S., Nagaraj, N., Mathur, A., \\textbf{Yedida, R.}, \\& Sneha, H. R. (2020). Evolution of novel activation functions in neural network training for astronomy data: habitability classification of exoplanets. \\textit{The European Physical Journal Special Topics, 229(16), 2629-2738}.",
+        "\\textbf{Yedida, R.}, Saha, S., \\& Prashanth, T. (2020). LipschitzLR: Using theoretically computed adaptive learning rates for fast convergence. \\textit{Applied Intelligence, 1-19}.",
+        "Sridhar, S., Saha, S., Shaikh, A., \\textbf{Yedida, R.}, \\& Saha, S. (2020, July). Parsimonious Computing: A Minority Training Regime for Effective Prediction in Large Microarray Expression Data Sets. In \\textit{2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE}.",
+        "Khaidem, L., \\textbf{Yedida, R.}, \\& Theophilus, A. J. (2019, November). Optimizing Inter-nationality of Journals: A Classical Gradient Approach Revisited via Swarm Intelligence. In \\textit{International Conference on Modeling, Machine Learning and Astronomy (pp. 3-14). Springer, Singapore}."
+    ],
+    "skills": [{
+        "name": "Python",
+        "type": "Languages"
+    }, {
+        "name": "TypeScript",
+        "type": "Languages"
+    }, {
+        "name": "Java",
+        "type": "Languages"
+    }, {
+        "name": "C++",
+        "type": "Languages"
+    }, {
+        "name": "Flask",
+        "type": "Frameworks"
+    }, {
+        "name": "Keras",
+        "type": "Frameworks"
+    }, {
+        "name": "PyTorch",
+        "type": "Frameworks"
+    }, {
+        "name": "Node.js",
+        "type": "Frameworks"
+    }, {
+        "name": "React",
+        "type": "Frameworks"
+    }, {
+        "name": "MySQL",
+        "type": "Databases"
+    }, {
+        "name": "MongoDB",
+        "type": "Databases"
+    }, {
+        "name": "DynamoDB",
+        "type": "Databases"
+    }],
+    "honors": [{
+        "date": "2022",
+        "title": "Google Cloud Champion Innovator"
+    }],
+    "funding": [{
+        "amount": "\\$5,000",
+        "title": "Google Cloud Academic Research Grant",
+        "date": "2022"
+    }],
+    "service": [{
+        "title": "Reviewer",
+        "details": "ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
+    }, {
+        "title": "PC Member",
+        "details": "Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+    }, {
+        "title": "Student Volunteer",
+        "details": "Automated Software Engineering (ASE) '21"
+    }]
+}

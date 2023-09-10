@@ -1,0 +1,23 @@
+VERSION 2.0.0
+
+INCLUDE preamble.tex
+CONFIG
+INCLUDE computeRole.py
+
+IMPORT
+BEGIN
+PARSE personalInfo
+PARSE education
+PARSE employment
+
+if ml:
+    PARSE publications
+    PARSE funding
+    PARSE service
+
+PARSE honors
+
+if not academic:
+    PARSE projects
+
+PARSE skills
