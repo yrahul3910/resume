@@ -325,6 +325,18 @@
     }, {
         "name": "DynamoDB",
         "type": "Databases"
+    }, {
+        "name": "Large Language Models (LLMs)",
+        "type": "Technologies"
+    }, {
+        "name": "Deep Learning",
+        "type": "Technologies"
+    }, {
+        "name": "Machine Learning",
+        "type": "Technologies"
+    }, {
+        "name": "Full-Stack Development",
+        "type": "Technologies"
     }],
     "honors": [{
         "date": "2022",
