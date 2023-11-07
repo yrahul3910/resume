@@ -1,4 +1,5 @@
 {
+    "version": "3.0.0",
     "personalInfo": {
         "name": "Rahul Yedida",
         "suffix": "",
@@ -24,19 +25,28 @@
         "institution": "North Carolina State University",
         "location": "Raleigh, NC",
         "degree": "Ph.D. Computer Science -- Advisor: Dr. Tim Menzies",
-        "dates": "Aug 2019 - Exp. Dec 2023"
+        "dates": [
+            "2019-08-01",
+            "2024-05-01"
+        ]
     }, {
         "institution": "PES University",
         "location": "Bangalore, India",
         "degree": "B.E. Computer Science",
-        "dates": "Aug 2015 - May 2019"
+        "dates": [
+            "2015-08-01",
+            "2019-05-01"
+        ]
     }],
     "employment": [{
         "organization": "Amazon",
         "location": "New York, NY",
         "positions": [{
             "position": "Software Dev Engineer Intern",
-            "dates": "May 2023 - Aug 2023",
+            "dates": [
+                "2023-05-15",
+                "2023-08-04"
+            ],
             "details": [
                 "Implemented profile locks for Prime Video on Echo Show devices.",
                 "\\textbf{Technology:} React Native, TypeScript"
@@ -44,7 +54,10 @@
             "tags": ["sde"]
         }, {
             "position": "Software Dev Engineer Intern",
-            "dates": "May 2022 - Jul 2022",
+            "dates": [
+                "2022-05-09",
+                "2022-07-15"
+            ],
             "details": [
                 "Developed a full-stack system to publish announcements in socrecards used by delivery service partners (DSPs).",
                 "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DyanmoDB, Java Spring"
@@ -56,7 +69,10 @@
         "location": "Raleigh, NC",
         "positions": [{
             "position": "Graduate Teaching Assistant",
-            "dates": "Aug 2022 - Apr 2023",
+            "dates": [
+                "2022-08-16",
+                "2023-05-15"
+            ],
             "details": [
                 "TA (with 3 others) for 119 students for a graduate Automated Software Engineering course.",
                 "TA (with 4 others) for 243 students for a graduate Software Engineering course."
@@ -64,7 +80,10 @@
             "tags": ["ml"]
         }, {
             "position": "Graduate Research Assistant",
-            "dates": "Jan 2020 - May 2022",
+            "dates": [
+                "2020-01-01",
+                "2022-05-15"
+            ],
             "details": [
                 "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC)",
                 "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results on static code warnings analysis using 10\\% of the labels."
@@ -74,7 +93,10 @@
     }],
     "projects": [{
         "title": "Programmable Resumes",
-        "dates": "Aug 2023 - Present",
+        "dates": [
+            "2023-08-01",
+            null
+        ],
         "skills": ["Python"],
         "links": [{
             "display": "GitHub",
@@ -86,7 +108,10 @@
         "tags": ["sde"]
     }, {
         "title": "pysh",
-        "dates": "May 2021 - Present",
+        "dates": [
+            "2021-05-01",
+            null
+        ],
         "skills": ["C++", "TMLanguage"],
         "links": [{
             "display": "GitHub",
@@ -98,7 +123,10 @@
         "tags": ["sde"]
     }, {
         "title": "RAISE",
-        "dates": "Aug 2020 - Present",
+        "dates": [
+            "2020-08-01",
+            null
+        ],
         "skills": ["Python", "Keras"],
         "links": [{
             "display": "GitHub",
@@ -113,7 +141,10 @@
         "tags": ["ml"]
     }, {
         "title": "Google/Meta Data Mining",
-        "dates": "Feb 2021 - May 2021",
+        "dates": [
+            "2021-02-01",
+            "2021-05-01"
+        ],
         "skills": ["Python", "Keras"],
         "links": [{
             "display": "GitHub",
@@ -125,7 +156,10 @@
         "tags": ["ml"]
     }, {
         "title": "Threaded Discussions Website",
-        "dates": "Feb 2021 - Jun 2021",
+        "dates": [
+            "2021-02-01",
+            "2021-06-01"
+        ],
         "skills": ["MongoDB", "Node.js", "React"],
         "links": [{
             "display": "GitHub",
@@ -137,7 +171,10 @@
         "tags": ["sde"]
     }, {
         "title": "NearConnect",
-        "dates": "Nov 2020 - Mar 2021",
+        "dates": [
+            "2020-11-01",
+            "2021-03-01"
+        ],
         "skills": ["iOS", "SwiftUI"],
         "links": [{
             "display": "GitHub",
@@ -152,7 +189,10 @@
         "tags": ["sde"]
     }, {
         "title": "Novel Drug Repurposing Hypotheses",
-        "dates": "Oct 2019 - Feb 2020",
+        "dates": [
+            "2019-10-01",
+            "2020-02-01"
+        ],
         "skills": ["Python", "PyTorch"],
         "links": [{
             "display": "GitHub",
@@ -164,7 +204,10 @@
         "tags": ["ml"]
     }, {
         "title": "Personalized Chatbot",
-        "dates": "May 2019",
+        "dates": [
+            "2019-05-01",
+            "2019-05-01"
+        ],
         "skills": ["Python", "Keras"],
         "links": [{
             "display": "GitHub",
@@ -176,7 +219,10 @@
         "tags": ["ml"]
     }, {
         "title": "Intelligent Tutoring System",
-        "dates": "Sep 2018 - May 2019",
+        "dates": [
+            "2018-09-01",
+            "2019-05-01"
+        ],
         "skills": ["Python"],
         "links": [{
             "display": "GitHub",
@@ -188,7 +234,10 @@
         "tags": ["ml"]
     }, {
         "title": "Human Activity Data Project",
-        "dates": "Oct 2018 - Nov 2018",
+        "dates": [
+            "2018-10-01",
+            "2018-11-01"
+        ],
         "skills": ["Python", "Keras"],
         "links": [{
             "display": "GitHub",
@@ -200,7 +249,10 @@
         "tags": ["ml"]
     }, {
         "title": "JournalBear",
-        "dates": "Jan 2017 - Feb 2019",
+        "dates": [
+            "2017-01-01",
+            "2019-02-01"
+        ],
         "skills": ["JavaScript, Electron"],
         "links": [{
             "display": "GitHub",
@@ -215,7 +267,10 @@
         "tags": ["sde"]
     }, {
         "title": "Results Scraper",
-        "dates": "Mar 2018 - Aug 2018",
+        "dates": [
+            "2018-03-01",
+            "2018-08-01"
+        ],
         "skills": ["MongoDB", "Express.js", "React", "Node.js"],
         "links": [{
             "display": "GitHub",
@@ -227,7 +282,10 @@
         "tags": ["sde"]
     }, {
         "title": "Video Sharing Website",
-        "dates": "Oct 2017 - Dec 2017",
+        "dates": [
+            "2017-10-01",
+            "2017-12-01"
+        ],
         "skills": ["MySQL", "Express.js", "React", "Node.js", "Sass", "Elasticsearch"],
         "links": [{
             "display": "GitHub",
@@ -239,7 +297,10 @@
         "tags": ["sde"]
     }, {
         "title": "Xtreme Calculations",
-        "dates": "Apr 2013 - Oct 2017",
+        "dates": [
+            "2013-04-01",
+            "2017-10-01"
+        ],
         "skills": ["VB.NET", "Python"],
         "links": [{
             "display": "Softpedia",
@@ -251,7 +312,10 @@
         "tags": ["sde"]
     }, {
         "title": "Video Indexer",
-        "dates": "Jun 2017 - Sep 2017",
+        "dates": [
+            "2017-06-01",
+            "2017-09-01"
+        ],
         "skills": ["C++", "Qt", "Sphinx"],
         "links": [{
             "display": "GitHub",
@@ -263,7 +327,10 @@
         "tags": ["sde"]
     }, {
         "title": "Web development projects",
-        "dates": "Jan 2017 - Nov 2017",
+        "dates": [
+            "2017-01-01",
+            "2017-11-01"
+        ],
         "skills": ["MongoDB", "Express.js", "React", "Node.js", "Sass", "D3.js"],
         "links": [{
             "display": "CodePen",
@@ -325,31 +392,22 @@
     }, {
         "name": "DynamoDB",
         "type": "Databases"
-    }, {
-        "name": "Large Language Models (LLMs)",
-        "type": "Technologies"
-    }, {
-        "name": "Deep Learning",
-        "type": "Technologies"
-    }, {
-        "name": "Machine Learning",
-        "type": "Technologies"
-    }, {
-        "name": "Full-Stack Development",
-        "type": "Technologies"
     }],
     "honors": [{
-        "date": "2022",
+        "date": "2022-10-20",
         "title": "Google Cloud Champion Innovator"
+    }, {
+        "date": "2023-07-25",
+        "title": "Google Cloud Champion Innovator - Cloud AI/ML"
     }],
     "funding": [{
         "amount": "\\$5,000",
         "title": "Google Cloud Academic Research Grant",
-        "date": "2022"
+        "date": "2022-02-24"
     }],
     "service": [{
         "title": "Reviewer",
-        "details": "ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
+        "details": "Artificial Intelligence Review 2023; ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
     }, {
         "title": "PC Member",
         "details": "Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
