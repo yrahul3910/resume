@@ -13,7 +13,7 @@ PARSE education
 PARSE employment
 
 if ml:
-    PARSE publications
+    PARSE publications latest_k=5
     PARSE funding
     PARSE service
 

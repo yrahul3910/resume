@@ -150,17 +150,21 @@ class DataParser:
         
         self.file.write("\\resumeSubHeadingListEnd\n\n")
     
-    def parse_publications(self):
+    def parse_publications(self, latest_k=999):
         if len(self.data["publications"]) == 0:
             return
         
         self.file.write("\n")
-        self.file.write("\\section{Publications}\n")
+        self.file.write("\\section{Recent Publications}\n")
+        self.file.write("See full list on Google Scholar.")
         self.file.write("\\resumeNumberedSubHeadingListStart\n")
 
-        for publication in self.data["publications"]:
+        i = 0
+        while i < len(self.data["publications"]) and i < latest_k:
+            publication = self.data["publications"][i]
             self.file.write(rf"\item {publication}")
             self.file.write("\n")
+            i += 1
 
         self.file.write("\\resumeNumberedSubHeadingListEnd\n\n")
     
