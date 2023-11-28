@@ -20,6 +20,6 @@ if ml:
 PARSE honors
 
 if not academic:
-    PARSE projects
+    PARSE projects latest_k=5
 
 PARSE skills
