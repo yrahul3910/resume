@@ -70,12 +70,23 @@
         "positions": [{
             "position": "Graduate Teaching Assistant",
             "dates": [
+                "2023-08-16",
+                "2024-05-15"
+            ],
+            "details": [
+                "TA (with 2 others) for 149 students for a graduate Automated Software Engineering course.",
+                "TA (with 4 others) for 289 students for a graduate Software Engineering course."
+            ],
+            "tags": ["ml"]
+        }, {
+            "position": "Graduate Teaching Assistant",
+            "dates": [
                 "2022-08-16",
                 "2023-05-15"
             ],
             "details": [
-                "TA (with 3 others) for 119 students for a graduate Automated Software Engineering course.",
-                "TA (with 4 others) for 243 students for a graduate Software Engineering course."
+                "TA (with 3 others) for 97 students for a graduate Automated Software Engineering course.",
+                "TA (with 4 others) for 233 students for a graduate Software Engineering course."
             ],
             "tags": ["ml"]
         }, {
@@ -87,6 +98,16 @@
             "details": [
                 "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC)",
                 "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results on static code warnings analysis using 10\\% of the labels."
+            ],
+            "tags": ["ml"]
+        }, {
+            "position": "Graduate Teaching Assistant",
+            "dates": [
+                "2019-08-16",
+                "2019-12-31"
+            ],
+            "details": [
+                "TA (with 1 other) for 159 students for an undergraduate C and Software Tools course."
             ],
             "tags": ["ml"]
         }]
@@ -346,11 +367,11 @@
         "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, (01), 1-17}.",
         "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications}.",
         "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR). IEEE, 2022.}",
-        "\\textbf{Yedida, R.}, \\& Saha, S. (2021). Beginning with Machine Learning: A Comprehensive Primer. \\textit{The European Physical Journal Special Topics: 1-82.}",
+        "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3079841}",
         "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3073242}",
         "Yang, X., Chen, J., \\textbf{Yedida, R.}, Yu, Z., \\& Menzies, T. (2021). Learning to recognize actionable static code warnings (is intrinsically easy). \\textit{Empirical Software Engineering, 26(3), 1-24}.",
-        "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3079841}",
         "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2021). Lessons learned from hyper-parameter tuning for microservice candidate identification. \\textit{Proceedings of the thirty-sixth IEEE/ACM International Conference on Automated Software Engineering (ASE)}",
+        "\\textbf{Yedida, R.}, \\& Saha, S. (2021). Beginning with Machine Learning: A Comprehensive Primer. \\textit{The European Physical Journal Special Topics: 1-82.}",
         "Saha, S., Nagaraj, N., Mathur, A., \\textbf{Yedida, R.}, \\& Sneha, H. R. (2020). Evolution of novel activation functions in neural network training for astronomy data: habitability classification of exoplanets. \\textit{The European Physical Journal Special Topics, 229(16), 2629-2738}.",
         "\\textbf{Yedida, R.}, Saha, S., \\& Prashanth, T. (2020). LipschitzLR: Using theoretically computed adaptive learning rates for fast convergence. \\textit{Applied Intelligence, 1-19}.",
         "Sridhar, S., Saha, S., Shaikh, A., \\textbf{Yedida, R.}, \\& Saha, S. (2020, July). Parsimonious Computing: A Minority Training Regime for Effective Prediction in Large Microarray Expression Data Sets. In \\textit{2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE}.",
@@ -413,10 +434,10 @@
     }],
     "service": [{
         "title": "Reviewer",
-        "details": "Neural Computing \\& Applications (NCAA), 2023; Artificial Intelligence Review 2023; ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
+        "details": "ICML 2024; Neural Processing Letters 2023; Neural Computing \\& Applications (NCAA), 2023; Artificial Intelligence Review 2023; ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
     }, {
         "title": "PC Member",
-        "details": "Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+        "details": "International Conference on AI Foundation Models and Software Engineering (FORGE) 2024; Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     }, {
         "title": "Student Volunteer",
         "details": "Automated Software Engineering (ASE) '21"

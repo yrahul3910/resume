@@ -94,7 +94,7 @@ class DataParser:
         after_date = datetime.fromisoformat(after_date)
         
         self.file.write("\n")
-        self.file.write("\\section{Employment}\n")
+        self.file.write("\\section{Recent Employment}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
         # Get a list of all the unique tags from the data

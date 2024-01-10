@@ -10,7 +10,7 @@ IMPORT
 BEGIN
 PARSE personalInfo
 PARSE education
-PARSE employment
+PARSE employment after_date="2020-01-01"
 
 if ml:
     if not academic:
