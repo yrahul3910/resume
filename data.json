@@ -59,7 +59,7 @@
                 "2022-07-15"
             ],
             "details": [
-                "Developed a full-stack system to publish announcements in socrecards used by delivery service partners (DSPs).",
+                "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
                 "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DyanmoDB, Java Spring"
             ],
             "tags": ["sde"]
