@@ -10,10 +10,14 @@ IMPORT
 BEGIN
 PARSE personalInfo
 PARSE education
-PARSE employment after_date="2020-01-01"
+
+if not master:
+  PARSE employment after_date="2020-01-01"
+else:
+  PARSE employment
 
 if ml:
-    if not academic:
+    if not academic and not master:
         PARSE publications latest_k=5
     else:
         PARSE publications
@@ -22,7 +26,9 @@ if ml:
 
 PARSE honors
 
-if not academic:
+if not academic and not master:
     PARSE projects latest_k=5
+elif not academic and master:
+    PARSE projects
 
 PARSE skills
