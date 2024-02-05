@@ -220,7 +220,7 @@
             "url": "https://github.com/yrahul3910/drug-repurposing-textmining"
         }],
         "details": [
-            "Identified novel drug repurposing hypotheses using text mining of radio transcripts, and verified results."
+            "Identified novel drug repurposing hypotheses using text mining of radio transcripts, and verified results using a knowledge graph."
         ],
         "tags": ["ml"]
     }, {
@@ -415,17 +415,17 @@
         "type": "Databases"
     }],
     "honors": [{
-        "date": "2022-02-24",
-        "title": "Google Cloud Research Innovator"
-    }, {
-        "date": "2022-10-20",
-        "title": "Google Cloud Champion Innovator"
-    }, {
         "date": "2023-07-25",
         "title": "Google Cloud Champion Innovator - Cloud AI/ML"
     }, {
         "date": "2022-12-21",
         "title": "Google Cloud Research Innovators Mentor"
+    }, {
+        "date": "2022-10-20",
+        "title": "Google Cloud Champion Innovator"
+    }, {
+        "date": "2022-02-24",
+        "title": "Google Cloud Research Innovator"
     }],
     "funding": [{
         "amount": "\\$5,000",
