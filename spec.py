@@ -12,7 +12,7 @@ class DataParser:
     For SDE CV, set sde to True
     For ML CV, set ml to True
     """
-    VERSION = "3.0.0"
+    VERSION = "3.1.0"
 
     def __init__(self, file, vars):
         self.file = file
@@ -94,7 +94,7 @@ class DataParser:
         after_date = datetime.fromisoformat(after_date)
         
         self.file.write("\n")
-        self.file.write("\\section{Recent Employment}\n")
+        self.file.write("\\section{Employment}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
         # Get a list of all the unique tags from the data
@@ -207,6 +207,21 @@ class DataParser:
         for honor in self.data["honors"]:
             date = self._get_str_from_date(honor["date"])
             self.file.write(rf"\item {honor['title']}, {date}")
+            self.file.write("\n")
+
+        self.file.write("\\resumeSubHeadingListEnd\n\n")
+    
+    def parse_talks(self):
+        if len(self.data["talks"]) == 0:
+            return
+        
+        self.file.write("\n")
+        self.file.write("\\section{Invited Talks}\n")
+        self.file.write("\\resumeSubHeadingListStart\n")
+
+        for talk in self.data["talks"]:
+            date = self._get_str_from_date(talk["date"])
+            self.file.write(rf"\item \textbf{{{date}}}, ``\textit{{{talk['title']}}}'' at {talk['location']}")
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")

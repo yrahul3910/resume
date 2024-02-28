@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.1.0",
     "personalInfo": {
         "name": "Rahul Yedida",
         "suffix": "",
@@ -157,7 +157,7 @@
             "url": "https://pypi.org/project/raise-utils/"
         }],
         "details": [
-            "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 23k times."
+            "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 24k times."
         ],
         "tags": ["ml"]
     }, {
@@ -377,6 +377,12 @@
         "Sridhar, S., Saha, S., Shaikh, A., \\textbf{Yedida, R.}, \\& Saha, S. (2020, July). Parsimonious Computing: A Minority Training Regime for Effective Prediction in Large Microarray Expression Data Sets. In \\textit{2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE}.",
         "Khaidem, L., \\textbf{Yedida, R.}, \\& Theophilus, A. J. (2019, November). Optimizing Inter-nationality of Journals: A Classical Gradient Approach Revisited via Swarm Intelligence. In \\textit{International Conference on Modeling, Machine Learning and Astronomy (pp. 3-14). Springer, Singapore}."
     ],
+    "talks": [{
+        "title": "Improving deep learning performance using theoretical ML",
+        "event": "IEEE AI Symposium",
+        "date": "2024-02-17",
+        "location": "BITS Pilani, KK Birla Goa Campus, India"
+    }],
     "skills": [{
         "name": "Python",
         "type": "Languages"
