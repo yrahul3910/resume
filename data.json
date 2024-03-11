@@ -419,6 +419,21 @@
     }, {
         "name": "DynamoDB",
         "type": "Databases"
+   }, {
+        "name": "Google Compute Engine",
+        "type": "Cloud"
+   }, {
+        "name": "RDS",
+        "type": "Cloud"
+   }, {
+        "name": "S3",
+        "type": "Cloud"
+   }, {
+        "name": "Google Cloud Storage",
+        "type": "Cloud"
+   }, {
+        "name": "EC2",
+        "type": "Cloud"
     }],
     "honors": [{
         "date": "2023-07-25",
@@ -440,10 +455,10 @@
     }],
     "service": [{
         "title": "Reviewer",
-        "details": "ICML 2024; Neural Processing Letters 2023, 2024; Neural Computing \\& Applications (NCAA), 2023; Artificial Intelligence Review 2023; ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
+        "details": "TMLR 2024; ICML 2024; Neural Processing Letters 2023, 2024; Neural Computing \\& Applications (NCAA), 2023; Artificial Intelligence Review 2023; ICLR 2024; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
     }, {
         "title": "PC Member",
-        "details": "International Conference on AI Foundation Models and Software Engineering (FORGE) 2024; Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+        "details": "AI Foundation Models and Software Engineering (FORGE) at ICSE 2024; Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021, 2022, 2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     }, {
         "title": "Student Volunteer",
         "details": "Automated Software Engineering (ASE) '21"
