@@ -25,7 +25,9 @@ if ml:
     PARSE service
 
 PARSE honors
-PARSE talks
+
+if academic:
+  PARSE talks
 
 if not academic and not master:
     PARSE projects latest_k=5
