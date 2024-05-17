@@ -113,6 +113,21 @@
         }]
     }],
     "projects": [{
+        "title": "Lastodo",
+        "dates": [
+            "2024-05-14",
+            null
+        ],
+        "skills": ["Rust"],
+        "links": [{
+            "display": "GitHub",
+            "url": "https://github.com/yrahul3910/lastodo"
+        }],
+        "details": [
+            "Developed a TUI todo application with vim keybindings."
+        ],
+        "tags": ["sde"]
+    }, {
         "title": "Programmable Resumes",
         "dates": [
             "2023-08-01",
