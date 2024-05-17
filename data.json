@@ -51,7 +51,7 @@
                 "Implemented profile locks for Prime Video on Echo Show devices.",
                 "\\textbf{Technology:} React Native, TypeScript"
             ],
-            "tags": ["sde"]
+            "tags": ["sde_emp"]
         }, {
             "position": "Software Dev Engineer Intern",
             "dates": [
@@ -62,7 +62,7 @@
                 "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
                 "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DyanmoDB, Java Spring"
             ],
-            "tags": ["sde"]
+            "tags": ["sde_emp"]
         }]
     }, {
         "organization": "North Carolina State University",
@@ -77,7 +77,7 @@
                 "TA (with 2 others) for 149 students for a graduate Automated Software Engineering course.",
                 "TA (with 4 others) for 289 students for a graduate Software Engineering course."
             ],
-            "tags": ["ml"]
+            "tags": ["ml_emp", "ta"]
         }, {
             "position": "Graduate Teaching Assistant",
             "dates": [
@@ -88,7 +88,7 @@
                 "TA (with 3 others) for 97 students for a graduate Automated Software Engineering course.",
                 "TA (with 4 others) for 233 students for a graduate Software Engineering course."
             ],
-            "tags": ["ml"]
+            "tags": ["ml_emp", "ta"]
         }, {
             "position": "Graduate Research Assistant",
             "dates": [
@@ -99,7 +99,7 @@
                 "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC)",
                 "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results on static code warnings analysis using 10\\% of the labels."
             ],
-            "tags": ["ml"]
+            "tags": ["ml_emp", "ta"]
         }, {
             "position": "Graduate Teaching Assistant",
             "dates": [
@@ -109,7 +109,7 @@
             "details": [
                 "TA (with 1 other) for 159 students for an undergraduate C and Software Tools course."
             ],
-            "tags": ["ml"]
+            "tags": ["ml_emp", "ta"]
         }]
     }],
     "projects": [{
@@ -146,7 +146,7 @@
         "title": "RAISE",
         "dates": [
             "2020-08-01",
-            null
+            "2024-05-16"
         ],
         "skills": ["Python", "Keras"],
         "links": [{
@@ -157,7 +157,7 @@
             "url": "https://pypi.org/project/raise-utils/"
         }],
         "details": [
-            "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 24k times."
+            "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 27k times."
         ],
         "tags": ["ml"]
     }, {

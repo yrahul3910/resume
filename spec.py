@@ -97,29 +97,19 @@ class DataParser:
         self.file.write("\\section{Employment}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
-        # Get a list of all the unique tags from the data
-        tags = {}
-        for entry in self.data["employment"]:
-            pos_tags = [pos["tags"] for pos in entry["positions"]]
-            # Flatten pos_tags
-            pos_tags = [tag for tags in pos_tags for tag in tags]
-            for tag in pos_tags:
-                tags[tag] = False
-
         for entry in self.data["employment"]:
             company = entry["organization"]
             location = entry["location"]
             positions = entry["positions"]
 
-            for tag in tags:
-                tags[tag] = False
-
-            for position in positions:
+            for i, position in enumerate(positions):
                 # Check the tags in position. If that self.vars[tag] is True, then we 
                 # include this position in the CV.
                 cur_tags = position["tags"]
-                set_tags = set([tag for tag in tags if tags[tag]])
                 dates = self._get_str_from_dates(position["dates"])
+
+                if cur_tags and not all([self.vars.get(tag, False) for tag in cur_tags]):
+                    continue
 
                 try:
                     pos_end_date = datetime.fromisoformat(position["dates"][1])
@@ -130,7 +120,7 @@ class DataParser:
                     # Probably got null, which means we should not filter
                     pass
 
-                if set(cur_tags).isdisjoint(set_tags):
+                if i == 0:
                     self.file.write(rf"\resumeSubheading{{{company}}}{{{location}}}{{{position['position']}}}{{{dates}}}")
                 else:
                     self.file.write(rf"\addExtraPosition{{{position['position']}}}{{{dates}}}")
@@ -145,9 +135,6 @@ class DataParser:
                 self.file.write(r"\resumeItemListEnd }")
                 self.file.write("\n")
 
-                for tag in cur_tags:
-                    tags[tag] = True
-        
         self.file.write("\\resumeSubHeadingListEnd\n\n")
     
     def parse_publications(self, latest_k=999):
@@ -246,7 +233,7 @@ class DataParser:
         while k < latest_k and i < len(self.data["projects"]) - 1:
             project = self.data["projects"][i]
             i += 1
-            if any([self.vars.get(tag, False) for tag in project["tags"]]):
+            if not project["tags"] or any([self.vars.get(tag, False) for tag in project["tags"]]):
                 k += 1
                 links = [rf"\href{{{link['url']}}}{{{link['display']}}}" for link in project["links"]]
                 dates = self._get_str_from_dates(project["dates"])
