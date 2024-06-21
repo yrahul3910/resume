@@ -74,7 +74,7 @@
             ],
             "details": [
                 "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
-                "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DyanmoDB, Java Spring"
+                "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DynamoDB, Java Spring"
             ],
             "tags": ["sde_emp"]
         }]
