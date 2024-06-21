@@ -8,28 +8,32 @@
             "ml_emp = True",
             "ml = True",
             "academic = False",
-            "ta = True"
+            "ta = False",
+            "phd = True"
         ],
         "sde": [
             "sde = True",
             "sde_emp = True",
             "ml_emp = True",
             "academic = False",
-            "ta = True"
+            "ta = False",
+            "phd = False"
         ],
         "ml": [
             "sde_emp = True",
             "ml_emp = True",
             "ml = True",
             "academic = False",
-            "ta = True"
+            "ta = False",
+            "phd = True"
         ],
         "academic": [
             "sde_emp = True",
             "ml_emp = True",
             "ml = True",
             "academic = True",
-            "ta = True"
+            "ta = False",
+            "phd = True"
         ]
     }
 }

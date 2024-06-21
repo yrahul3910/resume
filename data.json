@@ -39,8 +39,22 @@
         ]
     }],
     "employment": [{
+        "organization": "LexisNexis Legal \\& Professional",
+        "location": "Raleigh, NC",
+        "positions": [{
+            "position": "Senior Data Scientist I",
+            "dates": [
+                "2024-05-24",
+                null
+            ],
+            "details": [
+                "Profiled LLM calls and fixed inefficiencies, leading to a 10\\% reduction in runtime."
+            ],
+            "tags": ["ml_emp"]
+        }]
+    }, {
         "organization": "Amazon",
-        "location": "New York, NY",
+        "location": "New York, NY / Bellevue, WA",
         "positions": [{
             "position": "Software Dev Engineer Intern",
             "dates": [
@@ -68,13 +82,26 @@
         "organization": "North Carolina State University",
         "location": "Raleigh, NC",
         "positions": [{
+            "position": "PhD Student",
+            "dates": [
+                "2019-08-16",
+                null
+            ],
+            "details": [
+                "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior work and is 200-700\\% faster.",
+                "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity)",
+                "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels.",
+                "\\textbf{Teaching:} Teaching assistant for 830 students in total, over 5 semesters, for CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
+            ],
+            "tags": ["phd"]
+        }, {
             "position": "Graduate Teaching Assistant",
             "dates": [
                 "2023-08-16",
                 "2024-05-15"
             ],
             "details": [
-                "TA (with 2 others) for 149 students for a graduate Automated Software Engineering course.",
+                "TA (with 2 others) for 52 students for a graduate Automated Software Engineering course.",
                 "TA (with 4 others) for 289 students for a graduate Software Engineering course."
             ],
             "tags": ["ml_emp", "ta"]
@@ -124,7 +151,7 @@
             "url": "https://github.com/yrahul3910/lastodo"
         }],
         "details": [
-            "Developed a TUI todo application with vim keybindings."
+            "Developed a TUI todo application with vim-like keybindings."
         ],
         "tags": ["sde"]
     }, {
