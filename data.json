@@ -52,7 +52,7 @@
             "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% through various inefficiency fixes based on profiling results.",
             "\\textbf{Drafting improvements:} Helped improve drafting results by 10.4 percentage points of usefulness.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
-            "\\textbf{Technology:} Python, Splunk"
+            "\\textbf{Technology:} Python, Splunk, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
         },
@@ -62,7 +62,9 @@
           "details": [
             "Profiled LLM calls and fixed inefficiencies, leading to a 10\\% reduction in runtime.",
             "Refactored and parallelized code for a 16.4\\% speedup.",
-            "Proposed tabu search and Bayesian optimization methods for prompt tuning."
+            "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
+            "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
+            "\\textbf{Technology:} Python, Splunk, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
         }
@@ -497,9 +499,6 @@
       "name": "Google Compute Engine",
       "type": "Cloud"
     },
-    {
-      "name": "RDS",
-      "type": "Cloud"
     },
     {
       "name": "S3",
@@ -554,7 +553,8 @@
     },
     {
       "title": "Student Volunteer",
-      "details": "Automated Software Engineering (ASE) '21"
+      "details": "Automated Software Engineering (ASE) '21",
+      "hidden": true
     }
   ]
 }

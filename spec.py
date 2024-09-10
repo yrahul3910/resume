@@ -178,6 +178,9 @@ class DataParser:
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for service in self.data["service"]:
+            if "hidden" in service and service["hidden"]:
+                continue
+
             self.file.write(rf"\item \textbf{{{service['title']}}}, {service['details']}")
             self.file.write("\n")
 
