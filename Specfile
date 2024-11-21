@@ -1,7 +1,5 @@
 VERSION 3.1.0
 
-PYTHON python3.12
-
 INCLUDE preamble.tex
 CONFIG
 INCLUDE computeRole.py

@@ -50,9 +50,9 @@
           "dates": ["2024-05-24", null],
           "details": [
             "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% through various inefficiency fixes based on profiling results.",
-            "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 46 percentage points of usefulness through various improvements including implementing Self-Refine.",
+            "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 46 percentage points of usefulness through various improvements",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
-            "\\textbf{Technology:} Python, Splunk, Litestar, React, TypeScript, Tailwind"
+            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
         },
@@ -65,7 +65,7 @@
             "Complaint improvements: 40\\% --> 70\\% --> 86\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
-            "\\textbf{Technology:} Python, Splunk, Litestar, React, TypeScript, Tailwind"
+            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
         }
@@ -181,7 +181,7 @@
     },
     {
       "title": "RAISE",
-      "dates": ["2020-08-01", "2024-09-01"],
+      "dates": ["2020-08-01", "2024-11-17"],
       "skills": ["Python", "Keras"],
       "links": [
         {
@@ -194,7 +194,7 @@
         }
       ],
       "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 30k times."
+        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 39k times."
       ],
       "tags": ["ml"]
     },
