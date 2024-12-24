@@ -450,6 +450,10 @@
       "type": "Languages"
     },
     {
+      "name": "Gleam",
+      "type": "Languages"
+    },
+    {
       "name": "Flask",
       "type": "Frameworks"
     },
