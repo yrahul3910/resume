@@ -308,6 +308,21 @@
       "tags": ["ml"]
     },
     {
+      "title": "Astronomy Image Restoration",
+      "dates": ["2018-08-22", "2018-11-08"],
+      "skills": ["Python", "Keras"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/astro-image-restoration"
+        }
+      ],
+      "details": [
+        "Developed a machine learning approach to restore astronomical images affected by PSF anisotropy and smearing in crowded-field photometry,  improving data retention and accuracy in differential imaging analysis of long-baseline optical time series."
+      ],
+      "tags": ["ml"]
+    },
+    {
       "title": "JournalBear",
       "dates": ["2017-01-01", "2019-02-01"],
       "skills": ["JavaScript, Electron"],
