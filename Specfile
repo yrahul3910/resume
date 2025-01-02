@@ -9,16 +9,16 @@ BEGIN
 PARSE personalInfo
 PARSE education
 
-if not master:
-  PARSE employment after_date="2020-01-01"
-else:
+if master:
   PARSE employment
+else:
+  PARSE employment after_date="2020-01-01"
 
 if ml:
-    if not academic and not master:
-        PARSE publications latest_k=5
-    else:
+    if academic or master:
         PARSE publications
+    else:
+        PARSE publications latest_k=5
     PARSE funding
     PARSE service
 
@@ -27,9 +27,9 @@ PARSE honors
 if academic:
   PARSE talks
 
-if not academic and not master:
-    PARSE projects latest_k=5
-elif not academic and master:
+if master:
     PARSE projects
+elif not academic:
+    PARSE projects latest_k=5
 
 PARSE skills
