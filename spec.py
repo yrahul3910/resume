@@ -236,6 +236,10 @@ class DataParser:
         while k < latest_k and i < len(self.data["projects"]) - 1:
             project = self.data["projects"][i]
             i += 1
+
+            if "hidden" in project and project["hidden"]:
+                continue
+
             if not project["tags"] or any([self.vars.get(tag, False) for tag in project["tags"]]):
                 k += 1
                 links = [rf"\href{{{link['url']}}}{{{link['display']}}}" for link in project["links"]]
