@@ -49,7 +49,7 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% through various inefficiency fixes based on profiling results.",
+            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% through various inefficiency fixes based on profiling results. Reduced peak memory usage duration by 21.3\\% by implementing lazy-loading and code-splitting.",
             "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 46 percentage points of usefulness through various improvements",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
