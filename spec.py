@@ -195,8 +195,14 @@ class DataParser:
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for honor in self.data["honors"]:
-            date = self._get_str_from_date(honor["date"])
-            self.file.write(rf"\item {honor['title']}, {date}")
+            if isinstance(honor["date"], str):
+                date = self._get_str_from_date(honor["date"])
+            elif isinstance(honor["date"], list):
+                date = self._get_str_from_dates(honor["date"])
+            else:
+                raise ValueError(f"Honor {honor['title']} needs a valid date.")
+
+            self.file.write(rf"\item \textbf{{{date}}} - {honor['title']}")
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
