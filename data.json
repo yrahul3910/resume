@@ -49,8 +49,8 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% through various inefficiency fixes based on profiling results. Reduced peak memory usage duration by 21.3\\% by implementing lazy-loading and code-splitting.",
-            "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 46 percentage points of usefulness through various improvements",
+            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%.",
+            "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
@@ -60,9 +60,13 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
+            "--- Performance improvements ---",
+            "Implemented lazy-loading for modules, reducing peak memory usage time from 86.4\\% to 68\\% of the runtime",
             "Profiled LLM calls and fixed inefficiencies, leading to a 10\\% reduction in runtime.",
             "Refactored and parallelized code for a 16.4\\% speedup.",
+            "--- Drafting improvements ---",
             "Complaint improvements: 40\\% --> 70\\% --> 86\\% usefulness.",
+            "Motion improvements: 59.2\\% --> 81.6\\% --> 76\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
@@ -441,6 +445,7 @@
     }
   ],
   "publications": [
+    "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{Accepted to IEEE Transactions on Software Engineering}.",
     "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
     "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, (01), 1-17}.",
     "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications}.",
@@ -561,7 +566,7 @@
   "service": [
     {
       "title": "Guest Editor",
-      "details": "EMSE Special Issue on Replications and Negative Results (RENE) 2025"
+      "details": "Automated Software Engineering (Journal) 2025; EMSE Special Issue on Replications and Negative Results (RENE) 2025"
     },
     {
       "title": "Co-Chair",
@@ -569,11 +574,11 @@
     },
     {
       "title": "Reviewer",
-      "details": "TMLR 2024; ICML 2024-2025; Neural Processing Letters 2023-2024; Neural Computing \\& Applications (NCAA), 2023-2025; Artificial Intelligence Review 2023; ICLR 2024-2025; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
+      "details": "ICML 2024-2025; TMLR 2024; Neural Processing Letters 2023-2024; Neural Computing \\& Applications (NCAA), 2023-2025; Artificial Intelligence Review 2023; ICLR 2024-2025; NeurIPS 2023; Journal of Big Data, 2023; Automated Software Engineering (ASE), 2023; Empirical Software Engineering (EMSE), 2021; IEEE Symposium Series on Computational Intelligence (SSCI) 2020"
     },
     {
       "title": "PC Member",
-      "details": "AAAI 2025; AI Foundation Models and Software Engineering (FORGE) at ICSE 2024; Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021-2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+      "details": "ICSE 2026; AAAI 2025; AI Foundation Models and Software Engineering (FORGE) at ICSE 2024; Automated Software Engineering (ASE) Artifact Evaluation Track, 2022; International Conference on Software Maintenance and Evolution (ICSME) Artifact Evaluation Track, 2021-2023; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     },
     {
       "title": "Student Volunteer",
