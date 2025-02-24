@@ -56,15 +56,33 @@ class DataParser:
     
     def parse_personalInfo(self):
         info = self.data["personalInfo"]
+
+        if self.vars.get("ANONYMOUS_MODE", False):
+            name = "Anonymous"
+            phone = "Phone" if info["contact"]["phone"] else ""
+            email = "Email" if info["contact"]["email"] else ""
+        else:
+            name = info["name"]
+            phone = info["contact"]["phone"]
+            email = info["contact"]["email"]
+
+
         self.file.write(r"\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}")
         self.file.write("\n")
-        self.file.write(r"\textbf{\Large " + info["name"] + r"}\ifroleset,\fi \role &")
+        self.file.write(r"\textbf{\Large " + name + r"}\ifroleset,\fi \role &")
         self.file.write("\n")
-        self.file.write(r"\href{mailto:" + info['contact']['email'] + "}{" + info["contact"]["email"] + r"} \\")
+        self.file.write(r"\href{mailto:" + email + "}{" + email + r"} \\")
 
-        hrefs = [r"\href{" + link["url"] + "}{" + link["display"] + "}" for link in info["links"]]
+        hrefs = []
+        for link in info["links"]:
+            url = link["url"]
+            if self.vars.get("ANONYMOUS_MODE", False):
+                url = url.split(".com")[0] + ".com"
+
+            hrefs.append(r"\href{" + url + "}{" + link["display"] + "}")
+
         self.file.write("\n")
-        self.file.write(" :: ".join(hrefs) + f" & {info['contact']['phone']}")
+        self.file.write(" :: ".join(hrefs) + f" & {phone}")
         self.file.write(r" \\ \end{tabular*}")
         self.file.write("\n")  
 
@@ -138,6 +156,9 @@ class DataParser:
         self.file.write("\\resumeSubHeadingListEnd\n\n")
     
     def parse_publications(self, latest_k=999):
+        if self.vars.get("ANONYMOUS_MODE", False):
+            pass
+
         if len(self.data["publications"]) == 0:
             return
         
@@ -248,7 +269,14 @@ class DataParser:
 
             if not project["tags"] or any([self.vars.get(tag, False) for tag in project["tags"]]):
                 k += 1
-                links = [rf"\href{{{link['url']}}}{{{link['display']}}}" for link in project["links"]]
+                links = []
+                for link in project["links"]:
+                    url = link["url"]
+                    if self.vars.get("ANONYMOUS_MODE", False):
+                        url = url.split(".com")[0] + ".com"
+
+                    links.append(r"\href{" + url + "}{" + link["display"] + "}")
+
                 dates = self._get_str_from_dates(project["dates"])
                 self.file.write(rf"\resumeSubheading{{{project['title']}}}{{{dates}}}{{{', '.join(project['skills'])}}}{{{' :: '.join(links)}}}")
                 
