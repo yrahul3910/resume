@@ -253,6 +253,9 @@ class DataParser:
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for honor in self.data["honors"]:
+            if honor.get("hidden", False):
+                continue
+
             if isinstance(honor["date"], str):
                 date = self._get_str_from_date(honor["date"])
             elif isinstance(honor["date"], list):
