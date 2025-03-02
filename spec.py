@@ -12,6 +12,7 @@ class DataParser:
     For SDE CV, set sde to True
     For ML CV, set ml to True
     """
+
     VERSION = "3.1.0"
 
     def __init__(self, file, vars):
@@ -23,37 +24,37 @@ class DataParser:
 
         with open("data.json", "r") as f:
             self.data = json.load(f)
-        
+
         if "version" not in self.data:
             raise RuntimeError("data.json missing version")
 
         if parse_version(self.data["version"]) > parse_version(self.VERSION):
             raise RuntimeError("data.json version is newer than spec.py version")
-    
+
     def _get_str_from_date(self, date):
         try:
             return datetime.fromisoformat(date).strftime("%b %Y")
         except TypeError:
             return "Unknown"
-    
+
     def _get_str_from_dates(self, dates):
         [start, end] = dates
         try:
             start = datetime.fromisoformat(start).strftime("%b %Y")
         except TypeError:
             start = "Present"
-        
+
         try:
             end = datetime.fromisoformat(end).strftime("%b %Y")
         except TypeError:
             end = "Present"
-        
+
         return f"{start} - {end}"
-    
+
     def parse_begin(self):
         self.file.write(r"\begin{document}")
         self.file.write("\n")
-    
+
     def parse_personalInfo(self):
         info = self.data["personalInfo"]
 
@@ -65,7 +66,6 @@ class DataParser:
             name = info["name"]
             phone = info["contact"]["phone"]
             email = info["contact"]["email"]
-
 
         self.file.write(r"\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}")
         self.file.write("\n")
@@ -84,12 +84,12 @@ class DataParser:
         self.file.write("\n")
         self.file.write(" :: ".join(hrefs) + f" & {phone}")
         self.file.write(r" \\ \end{tabular*}")
-        self.file.write("\n")  
+        self.file.write("\n")
 
     def parse_education(self):
         if len(self.data["education"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Education}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
@@ -99,18 +99,45 @@ class DataParser:
             location = entry["location"]
             degree = entry["degree"]
             dates = self._get_str_from_dates(entry["dates"])
+            details = entry.get("details", [])
 
-            self.file.write(r"\resumeSubheading{" + school + "}{" + location + "}{" + degree + "}{" + dates + "}")
+            self.file.write(
+                r"\resumeSubheading{"
+                + school
+                + "}{"
+                + location
+                + "}{"
+                + degree
+                + "}{"
+                + dates
+                + "}"
+            )
             self.file.write("\n")
-        
+            self.file.write(r"{ \resumeItemListStart")
+            self.file.write("\n")
+
+            for detail in details:
+                detail_title, *detail_desc = detail.split(":")
+                self.file.write(
+                    r"\item \small{"
+                    + detail_title
+                    + r":\textit{"
+                    + ":".join(detail_desc)
+                    + r"} \vspace{-4pt}}"
+                )
+                self.file.write("\n")
+
+            self.file.write(r"\resumeItemListEnd }")
+            self.file.write("\n")
+
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_employment(self, after_date="1970-01-01"):
         if len(self.data["employment"]) == 0:
             return
-        
+
         after_date = datetime.fromisoformat(after_date)
-        
+
         self.file.write("\n")
         self.file.write("\\section{Employment}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
@@ -121,12 +148,14 @@ class DataParser:
             positions = entry["positions"]
 
             for i, position in enumerate(positions):
-                # Check the tags in position. If that self.vars[tag] is True, then we 
+                # Check the tags in position. If that self.vars[tag] is True, then we
                 # include this position in the CV.
                 cur_tags = position["tags"]
                 dates = self._get_str_from_dates(position["dates"])
 
-                if cur_tags and not all([self.vars.get(tag, False) for tag in cur_tags]):
+                if cur_tags and not all(
+                    [self.vars.get(tag, False) for tag in cur_tags]
+                ):
                     continue
 
                 try:
@@ -139,10 +168,14 @@ class DataParser:
                     pass
 
                 if i == 0:
-                    self.file.write(rf"\resumeSubheading{{{company}}}{{{location}}}{{{position['position']}}}{{{dates}}}")
+                    self.file.write(
+                        rf"\resumeSubheading{{{company}}}{{{location}}}{{{position['position']}}}{{{dates}}}"
+                    )
                 else:
-                    self.file.write(rf"\addExtraPosition{{{position['position']}}}{{{dates}}}")
-                
+                    self.file.write(
+                        rf"\addExtraPosition{{{position['position']}}}{{{dates}}}"
+                    )
+
                 self.file.write(r"{ \resumeItemListStart")
                 self.file.write("\n")
 
@@ -154,14 +187,14 @@ class DataParser:
                 self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_publications(self, latest_k=999):
         if self.vars.get("ANONYMOUS_MODE", False):
-            pass
+            return
 
         if len(self.data["publications"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Recent Publications}\n")
         self.file.write("See full list on Google Scholar.")
@@ -175,25 +208,27 @@ class DataParser:
             i += 1
 
         self.file.write("\\resumeNumberedSubHeadingListEnd\n\n")
-    
+
     def parse_funding(self):
         if len(self.data["funding"]) == 0:
             return
-        
+
         self.file.write("\\section{Funding}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for funding in self.data["funding"]:
             date = self._get_str_from_date(funding["date"])
-            self.file.write(rf"\item \textbf{{{funding['amount']}}}, {funding['title']}, {date}")
+            self.file.write(
+                rf"\item \textbf{{{funding['amount']}}}, {funding['title']}, {date}"
+            )
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_service(self):
         if len(self.data["service"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Service to Profession}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
@@ -202,15 +237,17 @@ class DataParser:
             if "hidden" in service and service["hidden"]:
                 continue
 
-            self.file.write(rf"\item \textbf{{{service['title']}}}, {service['details']}")
+            self.file.write(
+                rf"\item \textbf{{{service['title']}}}, {service['details']}"
+            )
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_honors(self):
         if len(self.data["honors"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Honors and Awards}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
@@ -227,26 +264,28 @@ class DataParser:
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_talks(self):
         if len(self.data["talks"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Invited Talks}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for talk in self.data["talks"]:
             date = self._get_str_from_date(talk["date"])
-            self.file.write(rf"\item \textbf{{{date}}}, ``\textit{{{talk['title']}}}'' at {talk['location']}")
+            self.file.write(
+                rf"\item \textbf{{{date}}}, ``\textit{{{talk['title']}}}'' at {talk['location']}"
+            )
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_projects(self, latest_k=999):
         if len(self.data["projects"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Relevant Projects}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
@@ -256,8 +295,12 @@ class DataParser:
 
         # Re-arrange self.data["projects"] in descending order of completion date.
         self.data["projects"].sort(
-            key=lambda p: datetime.fromisoformat(p["dates"][1]) if p["dates"][1] is not None else datetime(3000, 1, 1),
-            reverse=True
+            key=lambda p: (
+                datetime.fromisoformat(p["dates"][1])
+                if p["dates"][1] is not None
+                else datetime(3000, 1, 1)
+            ),
+            reverse=True,
         )
 
         while k < latest_k and i < len(self.data["projects"]) - 1:
@@ -267,7 +310,9 @@ class DataParser:
             if "hidden" in project and project["hidden"]:
                 continue
 
-            if not project["tags"] or any([self.vars.get(tag, False) for tag in project["tags"]]):
+            if not project["tags"] or any(
+                [self.vars.get(tag, False) for tag in project["tags"]]
+            ):
                 k += 1
                 links = []
                 for link in project["links"]:
@@ -278,8 +323,10 @@ class DataParser:
                     links.append(r"\href{" + url + "}{" + link["display"] + "}")
 
                 dates = self._get_str_from_dates(project["dates"])
-                self.file.write(rf"\resumeSubheading{{{project['title']}}}{{{dates}}}{{{', '.join(project['skills'])}}}{{{' :: '.join(links)}}}")
-                
+                self.file.write(
+                    rf"\resumeSubheading{{{project['title']}}}{{{dates}}}{{{', '.join(project['skills'])}}}{{{' :: '.join(links)}}}"
+                )
+
                 if len(project["details"]) == 1:
                     self.file.write(rf"\projectDescription{{{project['details'][0]}}}")
                 else:
@@ -296,11 +343,11 @@ class DataParser:
                 self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
-    
+
     def parse_skills(self):
         if len(self.data["skills"]) == 0:
             return
-        
+
         self.file.write("\n")
         self.file.write("\\section{Skills}\n")
         self.file.write("\\resumeSubHeadingListStart\n")

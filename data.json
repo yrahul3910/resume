@@ -30,13 +30,17 @@
     {
       "institution": "North Carolina State University",
       "location": "Raleigh, NC",
-      "degree": "Ph.D. Computer Science -- Advisor: Dr. Tim Menzies",
+      "degree": "Ph.D. Computer Science",
+      "details": [
+        "Advisor: Dr. Tim Menzies",
+        "Dissertation: Guidelines for the Application of Neural Technologies in Software Analytics (or: How to Do More with Less in SE)"
+      ],
       "dates": ["2019-08-01", "2024-07-30"]
     },
     {
       "institution": "PES University",
       "location": "Bangalore, India",
-      "degree": "B.E. Computer Science",
+      "degree": "B.E. Computer Science -- Advisor: Dr. Snehanshu Saha",
       "dates": ["2015-08-01", "2019-05-01"]
     }
   ],
@@ -562,7 +566,7 @@
   "service": [
     {
       "title": "Guest Editor",
-      "details": "Automated Software Engineering (Journal) 2025; EMSE Special Issue on Replications and Negative Results (RENE) 2025"
+      "details": "IEEE Software Special Issue on The Impact of AI on Productivity and Code 2025; Automated Software Engineering (Journal) 2025; EMSE Special Issue on Replications and Negative Results (RENE) 2025"
     },
     {
       "title": "Co-Chair",
