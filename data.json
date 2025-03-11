@@ -80,30 +80,6 @@
       ]
     },
     {
-      "organization": "Amazon",
-      "location": "New York, NY / Bellevue, WA",
-      "positions": [
-        {
-          "position": "Software Dev Engineer Intern",
-          "dates": ["2023-05-15", "2023-08-04"],
-          "details": [
-            "Implemented profile locks for Prime Video on Echo Show devices.",
-            "\\textbf{Technology:} React Native, TypeScript"
-          ],
-          "tags": ["sde_emp"]
-        },
-        {
-          "position": "Software Dev Engineer Intern",
-          "dates": ["2022-05-09", "2022-07-15"],
-          "details": [
-            "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
-            "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DynamoDB, Java Spring"
-          ],
-          "tags": ["sde_emp"]
-        }
-      ]
-    },
-    {
       "organization": "North Carolina State University",
       "location": "Raleigh, NC",
       "positions": [
@@ -111,8 +87,8 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior work and is 200-700\\% faster.",
-            "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity)",
+            "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior SOTA and is 200-700\\% faster.",
+            "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
             "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels.",
             "\\textbf{Teaching:} Teaching assistant for 830 students in total, over 5 semesters, for CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
           ],
@@ -152,6 +128,30 @@
             "TA (with 1 other) for 159 students for an undergraduate C and Software Tools course."
           ],
           "tags": ["ml_emp", "ta"]
+        }
+      ]
+    },
+    {
+      "organization": "Amazon",
+      "location": "New York, NY / Bellevue, WA",
+      "positions": [
+        {
+          "position": "Software Dev Engineer Intern",
+          "dates": ["2023-05-15", "2023-08-04"],
+          "details": [
+            "Implemented profile locks for Prime Video on Echo Show devices.",
+            "\\textbf{Technology:} React Native, TypeScript"
+          ],
+          "tags": ["sde_emp"]
+        },
+        {
+          "position": "Software Dev Engineer Intern",
+          "dates": ["2022-05-09", "2022-07-15"],
+          "details": [
+            "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
+            "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DynamoDB, Java Spring"
+          ],
+          "tags": ["sde_emp"]
         }
       ]
     }
@@ -449,19 +449,19 @@
     }
   ],
   "publications": [
-    "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{Accepted to IEEE Transactions on Software Engineering}.",
+    "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2025.3550103}.",
     "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
-    "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, (01), 1-17}.",
-    "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications}.",
-    "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR). IEEE, 2022.}",
-    "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3079841}",
-    "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2021.3073242}",
+    "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, 49(4), 2856-2872}.",
+    "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications, 219, 119673}.",
+    "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR).}",
+    "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, 48(8), 3103-3116}.",
+    "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, 48(8), 2939-2954}.",
     "Yang, X., Chen, J., \\textbf{Yedida, R.}, Yu, Z., \\& Menzies, T. (2021). Learning to recognize actionable static code warnings (is intrinsically easy). \\textit{Empirical Software Engineering, 26(3), 1-24}.",
-    "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2021). Lessons learned from hyper-parameter tuning for microservice candidate identification. \\textit{Proceedings of the thirty-sixth IEEE/ACM International Conference on Automated Software Engineering (ASE)}",
+    "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2021). Lessons learned from hyper-parameter tuning for microservice candidate identification. \\textit{Proceedings of the thirty-sixth IEEE/ACM International Conference on Automated Software Engineering (ASE)}.",
     "\\textbf{Yedida, R.}, \\& Saha, S. (2021). Beginning with Machine Learning: A Comprehensive Primer. \\textit{The European Physical Journal Special Topics}, 230(10), 2363-2444.",
     "Saha, S., Nagaraj, N., Mathur, A., \\textbf{Yedida, R.}, \\& Sneha, H. R. (2020). Evolution of novel activation functions in neural network training for astronomy data: habitability classification of exoplanets. \\textit{The European Physical Journal Special Topics, 229(16), 2629-2738}.",
     "\\textbf{Yedida, R.}, Saha, S., \\& Prashanth, T. (2020). LipschitzLR: Using theoretically computed adaptive learning rates for fast convergence. \\textit{Applied Intelligence, 1-19}.",
-    "Sridhar, S., Saha, S., Shaikh, A., \\textbf{Yedida, R.}, \\& Saha, S. (2020, July). Parsimonious Computing: A Minority Training Regime for Effective Prediction in Large Microarray Expression Data Sets. In \\textit{2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8). IEEE}.",
+    "Sridhar, S., Saha, S., Shaikh, A., \\textbf{Yedida, R.}, \\& Saha, S. (2020, July). Parsimonious Computing: A Minority Training Regime for Effective Prediction in Large Microarray Expression Data Sets. In \\textit{2020 International Joint Conference on Neural Networks (IJCNN) (pp. 1-8)}.",
     "Khaidem, L., \\textbf{Yedida, R.}, \\& Theophilus, A. J. (2019, November). Optimizing Inter-nationality of Journals: A Classical Gradient Approach Revisited via Swarm Intelligence. In \\textit{International Conference on Modeling, Machine Learning and Astronomy (pp. 3-14). Springer, Singapore}."
   ],
   "talks": [
@@ -544,7 +544,11 @@
   ],
   "honors": [
     {
-      "date": ["2022-10-20", null],
+      "date": ["2025-03-10", null],
+      "title": "Google Developer Expert - AI/ML"
+    },
+    {
+      "date": ["2022-10-20", "2025-03-10"],
       "title": "Google Cloud Champion Innovator - Cloud AI/ML"
     },
     {
@@ -579,7 +583,7 @@
     },
     {
       "title": "Reviewer",
-      "details": "ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; NeurIPS 2023; Journal of Big Data, 2023; ASE 2023; EMSE 2021; IEEE SSCI 2020"
+      "details": "NeurIPS 2023; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; EMSE 2021; IEEE SSCI 2020"
     },
     {
       "title": "Student Volunteer",
