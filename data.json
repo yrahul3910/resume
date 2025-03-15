@@ -87,12 +87,20 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior SOTA and is 200-700\\% faster.",
+            "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior SOTA and is 36.4\\% faster.",
             "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
             "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels.",
             "\\textbf{Teaching:} Teaching assistant for 830 students in total, over 5 semesters, for CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
           ],
           "tags": ["phd"]
+        },
+        {
+          "position": "PhD Student",
+          "dates": ["2019-08-16", "2024-07-30"],
+          "details": [
+            "HPO: 36.4\\% compared to Hyperopt, the fastest of the other SOTA optimizers. Compared on same datasets used in NeurIPS BBO Challenge 2020; p = 0.016."
+          ],
+          "tags": ["hidden"]
         },
         {
           "position": "Graduate Teaching Assistant",
