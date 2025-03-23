@@ -56,6 +56,7 @@
             "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%.",
             "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
+            "\\textbf{Innovation:} Developed fast passage filtering approach based on contrastive loss and tabu search.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
@@ -73,6 +74,7 @@
             "Motion improvements: 59.2\\% --> 81.6\\% --> 76\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
+            "\\textbf{Innovation:} InfoNCE + alignment and uniformity losses, tabu search with convex hull-based distance.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
