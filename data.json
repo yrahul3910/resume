@@ -581,11 +581,11 @@
   "service": [
     {
       "title": "Guest Editor",
-      "details": "IEEE Software Special Issue on The Impact of AI on Productivity and Code 2025; Automated Software Engineering (Journal) 2025; EMSE Special Issue on Replications and Negative Results (RENE) 2025"
+      "details": "IEEE Software SI: The Impact of AI on Productivity and Code 2025; ASEj SI: Replications and Negative Results (RENE) 2025; EMSE SI: Replications and Negative Results (RENE) 2025"
     },
     {
       "title": "Co-Chair",
-      "details": "Workshop on Replications and Negative Results (RENE) at ASE 2024"
+      "details": "ASE 2024 Workshop on Replications and Negative Results (RENE)"
     },
     {
       "title": "PC Member",
@@ -593,7 +593,7 @@
     },
     {
       "title": "Reviewer",
-      "details": "NeurIPS 2023; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; EMSE 2021; IEEE SSCI 2020"
+      "details": "ASEj 2025; NeurIPS 2023; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; EMSE 2021; IEEE SSCI 2020"
     },
     {
       "title": "Student Volunteer",
