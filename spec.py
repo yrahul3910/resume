@@ -13,7 +13,7 @@ class DataParser:
     For ML CV, set ml to True
     """
 
-    VERSION = "3.1.0"
+    VERSION = "3.2.0"
 
     def __init__(self, file, vars):
         self.file = file
