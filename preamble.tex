@@ -1,4 +1,5 @@
 \documentclass[letterpaper,11pt]{article}
+\usepackage{ifthen}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -50,12 +51,14 @@
 
 \newcommand{\projectDescription}[1]{\resumeItem{}{#1}}
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[4]{%
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{\small #1} & \small #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} & \small #2
+    \ifthenelse{\equal{#3}{} \AND \equal{#4}{}}{}{%
+      \\ \textit{\small #3} & \textit{\small #4} \\
+    }
+  \end{tabular*}\vspace{-5pt}%
 }
 
 \newcommand{\addExtraPosition}[2]{

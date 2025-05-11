@@ -263,8 +263,25 @@ class DataParser:
             else:
                 raise ValueError(f"Honor {honor['title']} needs a valid date.")
 
-            self.file.write(rf"\item \textbf{{{date}}} - {honor['title']}")
-            self.file.write("\n")
+            if "details" in honor:
+                self.file.write(
+                    rf"\resumeSubheading{{{honor['title']}}}{{{date}}}{{}}{{}}"
+                )
+                if len(honor["details"]) == 1:
+                    self.file.write(rf"\projectDescription{{{honor['details'][0]}}}")
+                else:
+                    self.file.write(r"{ \resumeItemListStart")
+                    self.file.write("\n")
+
+                    for detail in honor["details"]:
+                        self.file.write(r"\item \small{" + detail + r" \vspace{-2pt}}")
+                        self.file.write("\n")
+
+                    self.file.write(r"\resumeItemListEnd }")
+                    self.file.write("\n")
+            else:
+                self.file.write(rf"\item \textbf{{{date}}} - {honor['title']}")
+                self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
 

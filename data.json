@@ -558,11 +558,17 @@
   "honors": [
     {
       "date": ["2025-03-10", null],
-      "title": "Google Developer Expert (2025) - ML and GCP"
+      "title": "Google Developer Expert (2025) - ML and GCP",
+      "details": [
+        "The Google Developer Experts program is a global network of highly experienced technology experts, influencers, and thought leaders who have expertise in Google technologies, are active leaders in the space, natural mentors, and contribute to the wider developer and startup ecosystem."
+      ]
     },
     {
       "date": ["2022-10-20", "2025-03-10"],
-      "title": "Google Cloud Champion Innovator - Cloud AI/ML"
+      "title": "Google Cloud Champion Innovator - Cloud AI/ML",
+      "details": [
+        "Champion Innovators are a global network of more than 500 professionals, nominated by Googlers, who are technical experts in Google Cloud products and services. Each Champion specializes in one of nine different technical categories."
+      ]
     },
     {
       "date": "2022-12-21",
@@ -571,7 +577,8 @@
     },
     {
       "date": "2022-02-24",
-      "title": "Google Cloud Research Innovator"
+      "title": "Google Cloud Research Innovator",
+      "hidden": true
     }
   ],
   "funding": [
