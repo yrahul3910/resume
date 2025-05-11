@@ -180,8 +180,7 @@
       "details": [
         "WIP: Building a PDF parser and a RAG agent for academic papers by linking to the user's Zotero library."
       ],
-      "tags": ["sde", "ml"],
-      "hidden": true
+      "tags": ["sde", "ml"]
     },
     {
       "title": "Programmable Resumes",
@@ -585,15 +584,15 @@
     },
     {
       "title": "Co-Chair",
-      "details": "ASE 2024 Workshop on Replications and Negative Results (RENE)"
+      "details": "ASE 2025 Workshop on Intelligent Software Engineering; ASE 2024 Workshop on Replications and Negative Results (RENE)"
     },
     {
       "title": "PC Member",
-      "details": "ICSE 2026; AAAI 2025; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+      "details": "ICSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     },
     {
       "title": "Reviewer",
-      "details": "ASEj 2025; NeurIPS 2023; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; EMSE 2021; IEEE SSCI 2020"
+      "details": "EMSE 2021, 2025; ASEj 2025; AAAI 2025; NeurIPS 2023; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; IEEE SSCI 2020"
     },
     {
       "title": "Student Volunteer",
