@@ -249,7 +249,7 @@ class DataParser:
             return
 
         self.file.write("\n")
-        self.file.write("\\section{Honors and Awards}\n")
+        self.file.write("\\section{Honors}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
         for honor in self.data["honors"]:
