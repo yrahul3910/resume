@@ -23,6 +23,10 @@
       {
         "display": "Google Scholar",
         "url": "https://scholar.google.com/citations?user=0lP2AvkAAAAJ&hl=en"
+      },
+      {
+        "display": "Google Developers",
+        "url": "https://g.dev/ryedida"
       }
     ]
   },
@@ -53,11 +57,12 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%.",
-            "\\textbf{Drafting improvements:} Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
-            "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
-            "\\textbf{Innovation:} Developed fast passage filtering approach based on contrastive loss and tabu search.",
-            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
+            "Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%.",
+            "Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
+            "Led initiative to use Bayesian optimization for prompt tuning.",
+            "Led design for migration from RAG to agentic drafting system.",
+            "Developed fast passage filtering approach based on contrastive loss and tabu search.",
+            "Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
         },
@@ -74,7 +79,9 @@
             "Motion improvements: 59.2\\% --> 81.6\\% --> 76\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
             "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
-            "\\textbf{Innovation:} InfoNCE + alignment and uniformity losses, tabu search with convex hull-based distance.",
+            "--- Innovation ---",
+            "Passage filtering: InfoNCE + alignment and uniformity losses, tabu search with convex hull-based distance.",
+            "Agentic system: state transition-based, using message bus, almost like CQRS",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
@@ -168,7 +175,7 @@
   ],
   "projects": [
     {
-      "title": "RAG Agent for Zotero",
+      "title": "RAG System for Zotero",
       "dates": ["2024-10-25", null],
       "skills": ["Rust", "SQLite"],
       "links": [
@@ -178,9 +185,28 @@
         }
       ],
       "details": [
-        "WIP: Building a PDF parser and a RAG agent for academic papers by linking to the user's Zotero library."
+        "WIP: Building a RAG system with a custom PDF parser for academic papers using the user's Zotero library."
       ],
       "tags": ["sde", "ml"]
+    },
+    {
+      "title": "RAISE",
+      "dates": ["2020-08-01", "2025-06-12"],
+      "skills": ["Python", "Keras"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/raise"
+        },
+        {
+          "display": "PyPI",
+          "url": "https://pypi.org/project/raise-utils/"
+        }
+      ],
+      "details": [
+        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 55k times."
+      ],
+      "tags": ["ml"]
     },
     {
       "title": "Programmable Resumes",
@@ -211,25 +237,6 @@
         "Developed a superset of Python that allows running Shell code natively, with a VS Code syntax highlighting extension."
       ],
       "tags": ["sde"]
-    },
-    {
-      "title": "RAISE",
-      "dates": ["2020-08-01", null],
-      "skills": ["Python", "Keras"],
-      "links": [
-        {
-          "display": "GitHub",
-          "url": "https://github.com/yrahul3910/raise"
-        },
-        {
-          "display": "PyPI",
-          "url": "https://pypi.org/project/raise-utils/"
-        }
-      ],
-      "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 55k times."
-      ],
-      "tags": ["ml"]
     },
     {
       "title": "Google/Meta Data Mining",
@@ -458,7 +465,7 @@
     }
   ],
   "publications": [
-    "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{IEEE Transactions on Software Engineering, doi: 10.1109/TSE.2025.3550103}.",
+    "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{IEEE Transactions on Software Engineering, 51(6)}.",
     "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
     "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, 49(4), 2856-2872}.",
     "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications, 219, 119673}.",
@@ -599,7 +606,7 @@
     },
     {
       "title": "PC Member",
-      "details": "ICSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+      "details": "FSE 2026; ICSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     },
     {
       "title": "Reviewer",
