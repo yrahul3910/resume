@@ -177,7 +177,7 @@
     {
       "title": "RAG System for Zotero",
       "dates": ["2024-10-25", null],
-      "skills": ["Rust", "SQLite"],
+      "skills": ["Rust", "SQLite", "LanceDB"],
       "links": [
         {
           "display": "GitHub",
