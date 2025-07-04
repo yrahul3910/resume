@@ -380,7 +380,8 @@ class DataParser:
             skills[skill["type"]].append(skill["name"])
 
         for skill in skills:
-            self.file.write(rf"\item \textbf{{{skill}}}: {', '.join(skills[skill])}")
+            self.file.write(rf"\item \textbf{{{skill}}}: {', '.join(skills[skill])} ")
+            self.file.write(r"\vspace{-4pt}")
             self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")

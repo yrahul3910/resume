@@ -6,8 +6,14 @@ INCLUDE computeRole.py
 
 IMPORT
 BEGIN
+
 PARSE personalInfo
-PARSE education
+
+// For ML (industry), swap location of education and skills.
+if not academic:
+  PARSE skills
+else:
+  PARSE education
 
 if master:
   PARSE employment
@@ -32,4 +38,7 @@ if master:
 elif not academic:
     PARSE projects latest_k=5
 
-PARSE skills
+if not academic:
+  PARSE education
+else:
+  PARSE skills

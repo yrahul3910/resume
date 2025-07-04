@@ -57,12 +57,10 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%.",
-            "Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
-            "Led initiative to use Bayesian optimization for prompt tuning.",
-            "Led design for migration from RAG to agentic drafting system.",
-            "Developed fast passage filtering approach based on contrastive loss and tabu search.",
-            "Python, Litestar, React, TypeScript, Tailwind"
+            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%. Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
+            "\\textbf{Leadership:} Led initiative to use Bayesian optimization for prompt tuning. Led design for migration from RAG to agentic drafting system.",
+            "\\textbf{Innovation:} Developed fast passage filtering approach based on contrastive loss and tabu search.",
+            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
         },
@@ -596,6 +594,10 @@
     }
   ],
   "service": [
+    {
+      "title": "Contributing Member",
+      "details": "Python Software Foundation (Mar 2021 - Present)"
+    },
     {
       "title": "Guest Editor",
       "details": "IEEE Software SI: The Impact of AI on Productivity and Code 2025; ASEj SI: Replications and Negative Results (RENE) 2025; EMSE SI: Replications and Negative Results (RENE) 2025"
