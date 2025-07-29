@@ -173,17 +173,17 @@
   ],
   "projects": [
     {
-      "title": "RAG System for Zotero",
+      "title": "RAG-based QA System for Zotero",
       "dates": ["2024-10-25", null],
       "skills": ["Rust", "SQLite", "LanceDB"],
       "links": [
         {
           "display": "GitHub",
-          "url": "https://github.com/yrahul3910/zotero-rag/"
+          "url": "https://github.com/zotero-rag/zotero-rag/"
         }
       ],
       "details": [
-        "WIP: Building a RAG system with a custom PDF parser for academic papers using the user's Zotero library."
+        "Built a RAG system to answer research questions based on the user's Zotero library. Wrote a custom PDF parser for academic papers."
       ],
       "tags": ["sde", "ml"]
     },
@@ -202,7 +202,7 @@
         }
       ],
       "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 55k times."
+        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 57k times."
       ],
       "tags": ["ml"]
     },
