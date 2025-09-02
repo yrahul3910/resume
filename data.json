@@ -183,7 +183,7 @@
         }
       ],
       "details": [
-        "Built a RAG system to answer research questions based on the user's Zotero library. Wrote a custom PDF parser for academic papers."
+        "Built a RAG system to answer research questions and perform semantic search based on the user's Zotero library. Wrote a custom PDF parser for academic papers."
       ],
       "tags": ["sde", "ml"]
     },
@@ -202,7 +202,7 @@
         }
       ],
       "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 57k times."
+        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 59k times."
       ],
       "tags": ["ml"]
     },
@@ -463,6 +463,7 @@
     }
   ],
   "preprints": [
+    "Hearn, T., Evans, W., \\textbf{Yedida, R.}, Abdelshiheed, M., Rebei, A., & Khazaeli, S. (2025). Automated Legal Brief Drafting via Iterative Retrieval-Augmented Generation. \\textit{Under review at NLLP '25}.",
     "Rashid, P., Pal, S., Samudrala, V. K., \\textbf{Yedida, R.}, \\& Gehringer, E. (2025). Enhancing Peer Assessment Reliability: A Probabilistic Approach Integrating Formative and Summative Feedback. \\textit{Under review at EAAI '25}.",
     "Mehendale, S., Challa, A., \\textbf{Yedida, R.}, Danda, S., Sarkar, S., & Saha, S. (2025). Radon–Nikodym Derivative: Re-imagining Anomaly Detection from a Measure Theoretic Perspective. \\textit{Under review at ACM/IMS Journal of Data Science}.",
     "Yedida, R., & Saha, S. (2024). Strong convexity-guided hyper-parameter optimization for flatter losses. \\textit{Under review}."
