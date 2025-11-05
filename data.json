@@ -173,7 +173,7 @@
   ],
   "projects": [
     {
-      "title": "RAG-based QA System for Zotero",
+      "title": "RAG-based Q\\&A System for Zotero",
       "dates": ["2024-10-25", null],
       "skills": ["Rust", "SQLite", "LanceDB"],
       "links": [
@@ -183,7 +183,7 @@
         }
       ],
       "details": [
-        "Built a RAG system to answer research questions and perform semantic search based on the user's Zotero library. Wrote a custom PDF parser for academic papers."
+        "Built a question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser for academic papers and a RAG library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },
@@ -614,7 +614,7 @@
     },
     {
       "title": "PC Member",
-      "details": "AAAI 2025-2026; FSE 2026; ICSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+      "details": "AAAI 2025-2026; ASE Industry Track 2026; FSE 2026; ICSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     },
     {
       "title": "Reviewer",
