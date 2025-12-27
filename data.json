@@ -57,9 +57,9 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "\\textbf{Performance improvements:} Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%. Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
-            "\\textbf{Leadership:} Led initiative to use Bayesian optimization for prompt tuning. Led design for migration from RAG to agentic drafting system.",
-            "\\textbf{Innovation:} Developed fast passage filtering approach based on contrastive loss and tabu search.",
+            "Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%. Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
+            "Led initiatives to use Bayesian optimization for prompt tuning and migration effort from RAG to agentic drafting system.",
+            "Developed fast passage filtering approach based on contrastive loss.",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
@@ -76,10 +76,9 @@
             "Complaint improvements: 40\\% --> 70\\% --> 86\\% usefulness.",
             "Motion improvements: 59.2\\% --> 81.6\\% --> 76\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
-            "\\textbf{Workflow improvement:} Led initiative to use Bayesian optimization for prompt tuning.",
             "--- Innovation ---",
-            "Passage filtering: InfoNCE + alignment and uniformity losses, tabu search with convex hull-based distance.",
-            "Agentic system: state transition-based, using message bus, almost like CQRS",
+            "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters.",
+            "Agentic system: ADK; strong typing; led design and dev, acted as informed captain; ",
             "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
@@ -180,6 +179,10 @@
         {
           "display": "GitHub",
           "url": "https://github.com/zotero-rag/zotero-rag/"
+        },
+        {
+          "display": "crates.io",
+          "url": "https://crates.io/crates/zqa"
         }
       ],
       "details": [
@@ -202,7 +205,7 @@
         }
       ],
       "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 59k times."
+        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 65k times."
       ],
       "tags": ["ml"]
     },
