@@ -1,19 +1,29 @@
-for key in ['master', 'sde', 'ml']:
-    if key not in globals():
-        globals()[key] = False
+# List of tags used in `data.json`
+tags = {"master", "sde", "sde_emp", "ml", "ml_emp", "academic", "ta", "phd", "hidden"}
+for tag in tags:
+    # It's important to use `globals()`!
+    if tag not in globals():
+        globals()[tag] = False
 
+# Go top-down, starting with `master`
 if master:
-    sde = True
-    ml = True
+    for tag in tags - {"ta"}:
+        globals()[tag] = True
 
-outFile.writelines([
-    r'\newcommand{\role}{}',
-    r'\newif\ifroleset',
-    r'\rolesetfalse',
-])
+# Always include concise employment records
+sde_emp = True
+ml_emp = True
+
+# Always hide `hidden` items
+hidden = False
+
+outFile.writelines(
+    [
+        r"\newcommand{\role}{}",
+        r"\newif\ifroleset",
+        r"\rolesetfalse",
+    ]
+)
 
 if sde and not master:
-    outFile.writelines([
-        r'\renewcommand{\role}{ Software Developer}',
-        r'\rolesettrue'
-    ])
+    outFile.writelines([r"\renewcommand{\role}{ Software Developer}", r"\rolesettrue"])

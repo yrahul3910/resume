@@ -3,36 +3,17 @@
     "configs": {
         "master": [
             "master = True",
-            "sde = True",
-            "sde_emp = True",
-            "ml_emp = True",
-            "ml = True",
-            "academic = False",
-            "ta = False",
-            "phd = True"
+            "academic = True"
         ],
         "sde": [
-            "sde = True",
-            "sde_emp = True",
-            "ml_emp = True",
-            "academic = False",
-            "ta = False",
-            "phd = False"
+            "sde = True"
         ],
         "ml": [
-            "sde_emp = True",
-            "ml_emp = True",
-            "ml = True",
-            "academic = False",
-            "ta = False",
-            "phd = True"
+            "ml = True"
         ],
         "academic": [
-            "sde_emp = True",
-            "ml_emp = True",
             "ml = True",
             "academic = True",
-            "ta = False",
             "phd = True"
         ]
     }

@@ -18,7 +18,7 @@ else:
 if master:
   PARSE employment
 else:
-  PARSE employment after_date="2020-01-01"
+  PARSE employment after_date="2021-01-01"
 
 if ml:
     if academic or master:

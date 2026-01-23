@@ -60,7 +60,7 @@
             "Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%. Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
             "Led initiatives to use Bayesian optimization for prompt tuning and migration effort from RAG to agentic drafting system.",
             "Developed fast passage filtering approach based on contrastive loss.",
-            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
+            "\\textbf{Technology:} Python, Litestar, Google ADK, React, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
         },
@@ -79,7 +79,7 @@
             "--- Innovation ---",
             "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters.",
             "Agentic system: ADK; strong typing; led design and dev, acted as informed captain; ",
-            "\\textbf{Technology:} Python, Litestar, React, TypeScript, Tailwind"
+            "\\textbf{Technology:} Python, Litestar, Google ADK, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
         }
