@@ -22,12 +22,12 @@ These will generate all the PDFs simultaneously and move them to the `pdf/` dire
 
 The resume that led you here is written using a custom resume templating system I wrote, called `progres`. The readme for that project (linked above) goes into detail, but in brief:
 
-* `data.json` - Contains all the raw data. Different PDFs use different parts of this data based on the role. Note how several items have a `tags` attribute: these are important for filtering.
+* `data.json` - Contains all the raw data. Different PDFs use different parts of this data based on the role. Items have a `tags` attribute: these are used for filtering.
 * `configs.json` - This file describes, for each role, what tags are/aren't set. These are simply arrays of Python code, and they set different variables (which are the same as the tags) for each config. Items are only shown in a config if *all* the tags are set to `True`.
 * `computeRole.py` - This adds additional rules; the main one being that for the "master" resume, all tags are enabled.
 * `preamble.tex` - This is the preamble section of the intermediate LaTeX document, see below.
 * `spec.py` - Describes how to generate the LaTeX files for each config.
-* `Specfile` - A set of commands that describe how to build the resumes. It first imports a few necessary files described above. Each `PARSE` command is a call to one of the `parse_` functions from `spec.py`, and any arguments are forwarded as-is. Lines that don't start with a recognized command are treated as Python code.
+* `Specfile` - A set of commands that describes how to build the resumes. It first imports a few necessary files described above. Each `PARSE` command is a call to one of the `parse_` functions from `spec.py`, and any arguments are forwarded as-is. Lines that don't start with a recognized command are treated as Python code.
 
 With these files in place, the "main" file is the `Specfile`. `progres` performs the following conversions:
 
@@ -35,7 +35,7 @@ With these files in place, the "main" file is the `Specfile`. `progres` performs
 Specfile --> Python files --> LaTeX files --> PDFs
 ```
 
-`progres` is an interpreter that parses the commands and Python code from `Specfile`, and generates one Python file for each config. These are then run in parallel, and each of them generate a LaTeX file. These are compiled in parallel, and the intermediate files are deleted.
+`progres` is an interpreter that parses the commands and Python code from `Specfile`, and generates one Python file for each config. These are then run in parallel, and each of them generates a LaTeX file. These are compiled in parallel (generating the PDFs), and the intermediate files are deleted.
 
 ## FAQ
 
