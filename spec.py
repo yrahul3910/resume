@@ -85,6 +85,9 @@ class DataParser:
         self.file.write(" :: ".join(hrefs) + f" & {phone}")
         self.file.write(r" \\ \end{tabular*}")
         self.file.write("\n")
+        self.file.write(
+            "\\small{You can \\href{https://github.com/yrahul3910/resume/}{view this résumé's source code!}}"
+        )
 
     def parse_education(self):
         if len(self.data["education"]) == 0:
