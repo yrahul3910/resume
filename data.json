@@ -37,7 +37,7 @@
       "degree": "Ph.D. Computer Science",
       "details": [
         "Advisor: Dr. Tim Menzies",
-        "Dissertation: Guidelines for the Application of Neural Technologies in Software Analytics (or: How to Do More with Less in SE)"
+        "Dissertation: \\href{https://repository.lib.ncsu.edu/items/671bafe0-ac75-40e6-a705-27a5ede3793f}{Guidelines for the Application of Neural Technologies in Software Analytics (or: How to Do More with Less in SE)}"
       ],
       "dates": ["2019-08-01", "2024-07-30"]
     },
@@ -625,7 +625,7 @@
     },
     {
       "title": "Reviewer",
-      "details": "TSE 2025; NeurIPS 2023, 2025; EMSE 2021, 2025; ASEj 2025; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; IEEE SSCI 2020"
+      "details": "TSE 2025, 2026; NeurIPS 2023, 2025; EMSE 2021, 2025; ASEj 2025; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; Journal of Big Data, 2023; ASE 2023; IEEE SSCI 2020"
     },
     {
       "title": "Student Volunteer",
