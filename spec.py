@@ -23,7 +23,10 @@ class DataParser:
             raise RuntimeError("data.json not found")
 
         with open("data.json", "r") as f:
-            self.data = json.load(f)
+            try:
+                self.data = json.load(f)
+            except json.JSONDecodeError:
+                raise RuntimeError("Invalid JSON: {e}")
 
         if "version" not in self.data:
             raise RuntimeError("data.json missing version")
@@ -38,6 +41,9 @@ class DataParser:
             return "Unknown"
 
     def _get_str_from_dates(self, dates):
+        if len(dates) == 1:
+            return self._get_str_from_date(dates[0])
+
         [start, end] = dates
         try:
             start = datetime.fromisoformat(start).strftime("%b %Y")
@@ -283,7 +289,9 @@ class DataParser:
                     self.file.write(r"\resumeItemListEnd }")
                     self.file.write("\n")
             else:
-                self.file.write(rf"\item \textbf{{{date}}} - {honor['title']}")
+                self.file.write(
+                    rf"\resumeSubheading{{{honor['title']}}}{{{date}}}{{}}{{}}"
+                )
                 self.file.write("\n")
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")

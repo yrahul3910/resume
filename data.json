@@ -575,6 +575,10 @@
   ],
   "honors": [
     {
+      "date": "2026-03-18",
+      "title": "Distinguished Reviewer, ICSE 2026"
+    },
+    {
       "date": ["2025-03-10", null],
       "title": "Google Developer Expert - ML and GCP",
       "details": [
