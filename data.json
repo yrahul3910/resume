@@ -176,7 +176,7 @@
   ],
   "projects": [
     {
-      "title": "RAG-based Q\\&A System for Zotero",
+      "title": "Q\\&A System for Zotero",
       "dates": ["2024-10-25", null],
       "skills": ["Rust", "SQLite", "LanceDB"],
       "links": [
@@ -190,7 +190,7 @@
         }
       ],
       "details": [
-        "Built a question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser for academic papers and a RAG library with support for multiple providers and tool calling."
+        "Built a question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser for academic papers and a RAG/agentic library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },
