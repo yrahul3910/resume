@@ -25,8 +25,8 @@ class DataParser:
         with open("data.json", "r") as f:
             try:
                 self.data = json.load(f)
-            except json.JSONDecodeError:
-                raise RuntimeError("Invalid JSON: {e}")
+            except json.JSONDecodeError as e:
+                raise RuntimeError(f"Invalid JSON: {e}")
 
         if "version" not in self.data:
             raise RuntimeError("data.json missing version")

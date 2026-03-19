@@ -501,6 +501,10 @@
   ],
   "skills": [
     {
+      "name": "Rust",
+      "type": "Languages"
+    },
+    {
       "name": "Python",
       "type": "Languages"
     },
@@ -513,20 +517,12 @@
       "type": "Languages"
     },
     {
-      "name": "Rust",
-      "type": "Languages"
-    },
-    {
       "name": "C++",
       "type": "Languages"
     },
     {
       "name": "Gleam",
       "type": "Languages"
-    },
-    {
-      "name": "Flask",
-      "type": "Frameworks"
     },
     {
       "name": "Keras",
@@ -537,20 +533,32 @@
       "type": "ML/AI"
     },
     {
-      "name": "Hyper-parameter Optimization",
+      "name": "Hyper-parameter optimization",
       "type": "ML/AI"
     },
     {
-      "name": "Bayesian Optimization",
-      "type": "ML/AI"
+      "name": "React",
+      "type": "Frameworks"
     },
     {
-      "name": "Node.js",
+      "name": "Flask",
+      "type": "Frameworks"
+    },
+    {
+      "name": "Litestar",
+      "type": "Frameworks"
+    },
+    {
+      "name": "FastAPI",
       "type": "Frameworks"
     },
     {
       "name": "React",
       "type": "Frameworks"
+    },
+    {
+      "name": "LanceDB",
+      "type": "Databases"
     },
     {
       "name": "MySQL",
@@ -600,7 +608,9 @@
     {
       "date": "2022-02-24",
       "title": "Google Cloud Research Innovator",
-      "hidden": true
+      "details": [
+        "Research Innovators are a global community of researchers driving scientific breakthroughs with Google Cloud."
+      ]
     }
   ],
   "funding": [
