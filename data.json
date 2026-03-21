@@ -553,10 +553,6 @@
       "type": "Frameworks"
     },
     {
-      "name": "React",
-      "type": "Frameworks"
-    },
-    {
       "name": "LanceDB",
       "type": "Databases"
     },
