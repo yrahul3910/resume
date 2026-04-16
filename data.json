@@ -176,6 +176,19 @@
   ],
   "projects": [
     {
+      "title": "The 1 Billion Row Challenge (1BRC)",
+      "dates": ["2026-02-14", null],
+      "skills": ["Zig"],
+      "links": [{
+        "display": "GitHub",
+        "url": "https://github.com/yrahul3910/1brc"
+      }],
+      "details": [
+        "Wrote a Zig implementation for the 1BRC, running in 1.20s (M4 Pro, 14 core) using mmap, open addressing (Wyhash + Robin Hood probing), and packed SIMD."
+      ],
+      "tags": ["sde"]
+    },
+    {
       "title": "Q\\&A System for Zotero",
       "dates": ["2024-10-25", null],
       "skills": ["Rust", "SQLite", "LanceDB"],
@@ -190,7 +203,7 @@
         }
       ],
       "details": [
-        "Built a question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser for academic papers and a RAG/agentic library with support for multiple providers and tool calling."
+        "Built a question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser (mean: ~1,900 pages/s; 125 MB/s; n = 330) for academic papers and a RAG/agentic library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },
@@ -631,7 +644,7 @@
     },
     {
       "title": "PC Member",
-      "details": "ICSE 2026, 2027; EDM 2026; AAAI 2025-2026; ASE Industry Track 2026; FSE 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
+      "details": "FSE 2026, 2027; ICSE 2026, 2027; EDM 2026; AAAI 2025-2026; ASE Industry Track 2026; AI Foundation Models and Software Engineering (FORGE) 2024; ICSME Artifact Evaluation Track, 2021-2023; ASE Artifact Evaluation Track, 2022; International Conference on Modeling, Machine Learning, and Astronomy (MMLA), 2019"
     },
     {
       "title": "Reviewer",
