@@ -177,7 +177,7 @@
   "projects": [
     {
       "title": "The 1 Billion Row Challenge (1BRC)",
-      "dates": ["2026-02-14", null],
+      "dates": ["2026-02-14", "2026-04-12"],
       "skills": ["Zig"],
       "links": [{
         "display": "GitHub",
@@ -186,7 +186,7 @@
       "details": [
         "Wrote a Zig implementation for the 1BRC, running in 1.20s (M4 Pro, 14 core) using mmap, open addressing (Wyhash + Robin Hood probing), and packed SIMD."
       ],
-      "tags": ["sde"]
+      "tags": ["sde-hidden"]
     },
     {
       "title": "Q\\&A System for Zotero",
