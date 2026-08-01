@@ -91,9 +91,13 @@ class DataParser:
         self.file.write(" :: ".join(hrefs) + f" & {phone}")
         self.file.write(r" \\ \end{tabular*}")
         self.file.write("\n")
-        self.file.write(
-            "\\small{You can \\href{https://github.com/yrahul3910/resume/}{view this résumé's source code!}}"
-        )
+
+        # Skip on the academic CV (wrong register there); master sets academic
+        # too but should keep the line.
+        if not self.vars.get("academic", False) or self.vars.get("master", False):
+            self.file.write(
+                "\\small{You can \\href{https://github.com/yrahul3910/resume/}{view this résumé's source code!}}"
+            )
 
     def parse_education(self):
         if len(self.data["education"]) == 0:
