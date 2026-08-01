@@ -404,7 +404,7 @@
     {
       "title": "JournalBear",
       "dates": ["2017-01-01", "2026-07-27"],
-      "skills": ["JavaScript, Electron", "SwiftUI"],
+      "skills": ["TypeScript", "React", "Zustand", "Electron", "SwiftUI"],
       "links": [
         {
           "display": "GitHub",
