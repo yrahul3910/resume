@@ -218,6 +218,26 @@ class DataParser:
 
         self.file.write("\\resumeNumberedSubHeadingListEnd\n\n")
 
+    def parse_preprints(self, latest_k=999):
+        if self.vars.get("ANONYMOUS_MODE", False):
+            return
+
+        if len(self.data["preprints"]) == 0:
+            return
+
+        self.file.write("\n")
+        self.file.write("\\section{Preprints}\n")
+        self.file.write("\\resumeNumberedSubHeadingListStart\n")
+
+        i = 0
+        while i < len(self.data["preprints"]) and i < latest_k:
+            preprint = self.data["preprints"][i]
+            self.file.write(rf"\item {preprint}")
+            self.file.write("\n")
+            i += 1
+
+        self.file.write("\\resumeNumberedSubHeadingListEnd\n\n")
+
     def parse_funding(self):
         if len(self.data["funding"]) == 0:
             return
@@ -334,7 +354,7 @@ class DataParser:
             reverse=True,
         )
 
-        while k < latest_k and i < len(self.data["projects"]) - 1:
+        while k < latest_k and i < len(self.data["projects"]):
             project = self.data["projects"][i]
             i += 1
 

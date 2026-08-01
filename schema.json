@@ -85,6 +85,10 @@
       "type": "array",
       "items": { "type": "string" }
     },
+    "preprints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
     "funding": {
       "type": "array",
       "items": {

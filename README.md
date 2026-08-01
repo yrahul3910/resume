@@ -10,13 +10,7 @@ To generate the PDFs, run
 progres -o pdf
 ```
 
-You can also use
-
-```
-make
-```
-
-These will generate all the PDFs simultaneously and move them to the `pdf/` directory.
+You can also use `make`. These will generate all the PDFs simultaneously and move them to the `pdf/` directory. If you're editing the source and run into LaTeX or Python errors, you can remove intermediate files using `make clean`.
 
 ## How does this work?
 

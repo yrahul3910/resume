@@ -57,9 +57,12 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "Improved customer-facing product runtime by 24.8\\% and reduced peak memory usage duration by 21.3\\%. Helped improve complaint drafting results by 115\\% and motion drafting by 28.4\\% of usefulness.",
-            "Tech lead for migration effort from RAG to agentic drafting system and subsequent maintenance.",
-            "Developed fast passage filtering approach based on contrastive loss.",
+            "Reduced customer-facing product runtime by 24.8\\% and cut time spent at peak memory from 86.4\\% to 68\\% of the runtime via lazy module loading, LLM call profiling, and parallelization.",
+            "As part of a 3-person team, improved complaint drafting usefulness from 40\\% to 86\\% and motion drafting from 59.2\\% to 76\\%.",
+            "Led the migration from RAG to an agentic legal drafting system as tech lead, and own its continued development.",
+            "Developed a fast (median 12ms) passage filtering approach based on contrastive loss.",
+            "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
+            "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, Rust, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
@@ -78,10 +81,11 @@
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
             "--- Developer tooling ---",
             "MITM proxy in Rust with replay support and saving to HAR.",
-            "Style checker scripts (Python)",
+            "Style checker scripts (Python): avoid future-annotations import, prefer PEP 695 generic syntax over TypeVar, etc.",
             "TSX-based UI to visualize agentic system runtime steps",
+            "\\texttt{lnav} configuration for structured log viewing",
             "--- Innovation ---",
-            "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters.",
+            "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters. Median 12ms latency ($n = 40$).",
             "Agentic system: ADK; strong typing; led design and dev, acted as informed captain; ",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, TypeScript, Tailwind"
           ],
@@ -100,7 +104,7 @@
             "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior SOTA and is 36.4\\% faster.",
             "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
             "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels.",
-            "\\textbf{Teaching:} Teaching assistant for 830 students in total, over 5 semesters, for CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
+            "\\textbf{Teaching:} TA for 830 students over 5 semesters across CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
           ],
           "tags": ["phd"]
         },
@@ -157,7 +161,7 @@
           "position": "Software Dev Engineer Intern",
           "dates": ["2023-05-15", "2023-08-04"],
           "details": [
-            "Implemented profile locks for Prime Video on Echo Show devices.",
+            "Implemented and shipped profile locks for Prime Video on Echo Show devices.",
             "\\textbf{Technology:} React Native, TypeScript"
           ],
           "tags": ["sde_emp"]
@@ -166,7 +170,7 @@
           "position": "Software Dev Engineer Intern",
           "dates": ["2022-05-09", "2022-07-15"],
           "details": [
-            "Developed a full-stack system to publish announcements in scorecards used by delivery service partners (DSPs).",
+            "Developed a full-stack system to publish announcements in scorecards used by delivery service partners.",
             "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DynamoDB, Java Spring"
           ],
           "tags": ["sde_emp"]
@@ -175,6 +179,21 @@
     }
   ],
   "projects": [
+    {
+      "title": "DreamBerd Interpreter",
+      "dates": ["2026-07-01", null],
+      "skills": ["Rust"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/dreamberd"
+        }
+      ],
+      "details": [
+        "Work-in-progress: writing an interpreter for DreamBerd, a satirical language with support for zero-quote strings, three-valued logic, and other exotic features"
+      ],
+      "tags": ["sde_hidden"]
+    },
     {
       "title": "The 1 Billion Row Challenge (1BRC)",
       "dates": ["2026-02-14", "2026-04-12"],
@@ -188,7 +207,7 @@
       "details": [
         "Wrote a Zig implementation for the 1BRC, running in 1.20s (M4 Pro, 14 core) using mmap, open addressing (Wyhash + Robin Hood probing), and packed SIMD."
       ],
-      "tags": ["sde-hidden"]
+      "tags": ["sde"]
     },
     {
       "title": "Q\\&A System for Zotero",
@@ -205,7 +224,7 @@
         }
       ],
       "details": [
-        "Built an academic question-answering and semantic search system based on the user's Zotero library. Wrote a custom PDF parser (mean: ~1,900 pages/s; 125 MB/s; n = 330) for academic papers and a RAG library with support for multiple providers and tool calling."
+        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (1,900 pages/s over 330 papers; M4 Pro) and a RAG library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },
@@ -224,7 +243,7 @@
         }
       ],
       "details": [
-        "Sole developer for a PEP8-compliant, ML Python package used by our research lab and others for replicable results. Downloaded 65k times."
+        "Sole developer of an ML utilities Python package used by multiple research groups for reproducible experiments. Downloaded 65k times on PyPI."
       ],
       "tags": ["ml"]
     },
@@ -254,7 +273,7 @@
         }
       ],
       "details": [
-        "Developed a superset of Python that allows running Shell code natively, with a VS Code syntax highlighting extension."
+        "Developed a superset of Python that allows running shell code natively, with a VS Code syntax highlighting extension."
       ],
       "tags": ["sde"]
     },
@@ -269,7 +288,7 @@
         }
       ],
       "details": [
-        "Data science project to use Google Takeout and Meta user data to suggest products to advertise to a user from Amazon best-sellers using DistilGPT-2, and achieved 0.6 F-1 score."
+        "Mined Google Takeout and Meta data exports to predict which Amazon best-sellers to advertise to a user (DistilGPT-2, 0.6 F-1 score)."
       ],
       "tags": ["ml"]
     },
@@ -284,7 +303,7 @@
         }
       ],
       "details": [
-        "Companion website for video calls that allows for Reddit-style, threaded discussions."
+        "Built a companion site for video calls supporting Reddit-style threaded discussions."
       ],
       "tags": ["sde"]
     },
@@ -318,7 +337,7 @@
         }
       ],
       "details": [
-        "Identified novel drug repurposing hypotheses using text mining of radio transcripts, and verified results using a knowledge graph."
+        "Identified novel drug repurposing hypotheses by text mining transcripts of an NPR medical radio show, and verified results using a knowledge graph."
       ],
       "tags": ["ml"]
     },
@@ -378,18 +397,22 @@
         }
       ],
       "details": [
-        "Developed a machine learning approach to restore astronomical images affected by PSF anisotropy and smearing in crowded-field photometry,  improving data retention and accuracy in differential imaging analysis of long-baseline optical time series."
+        "Developed a machine learning approach to restore astronomical images affected by PSF anisotropy and smearing in crowded-field photometry. Improved data retention and accuracy in differential imaging analysis of long-baseline optical time series."
       ],
       "tags": ["ml"]
     },
     {
       "title": "JournalBear",
-      "dates": ["2017-01-01", "2019-02-01"],
-      "skills": ["JavaScript, Electron"],
+      "dates": ["2017-01-01", "2026-07-27"],
+      "skills": ["JavaScript, Electron", "SwiftUI"],
       "links": [
         {
           "display": "GitHub",
           "url": "https://github.com/yrahul3910/journal"
+        },
+        {
+          "display": "App Store",
+          "url": "https://apps.apple.com/us/app/journalbear/id6791910743"
         },
         {
           "display": "Softpedia",
@@ -397,7 +420,7 @@
         }
       ],
       "details": [
-        "Cross-platform journal application with AES-256 encryption. Rated 4/5 by Softpedia."
+        "Cross-platform journaling app with AES-256 encryption and separate native apps for iOS and macOS. Rated 4/5 by Softpedia."
       ],
       "tags": ["sde"]
     },
@@ -485,10 +508,10 @@
     }
   ],
   "preprints": [
-    "Hearn, T., Evans, W., \\textbf{Yedida, R.}, Abdelshiheed, M., Rebei, A., & Khazaeli, S. (2025). Automated Legal Brief Drafting via Iterative Retrieval-Augmented Generation. \\textit{Under review at NLLP '25}.",
-    "Rashid, P., Pal, S., Samudrala, V. K., \\textbf{Yedida, R.}, \\& Gehringer, E. (2025). Enhancing Peer Assessment Reliability: A Probabilistic Approach Integrating Formative and Summative Feedback. \\textit{Under review at EAAI '25}.",
-    "Mehendale, S., Challa, A., \\textbf{Yedida, R.}, Danda, S., Sarkar, S., & Saha, S. (2025). Radon–Nikodym Derivative: Re-imagining Anomaly Detection from a Measure Theoretic Perspective. \\textit{Under review at ACM/IMS Journal of Data Science}.",
-    "Yedida, R., & Saha, S. (2024). Strong convexity-guided hyper-parameter optimization for flatter losses. \\textit{Under review}."
+    "Hearn, T., Evans, W., \\textbf{Yedida, R.}, Abdelshiheed, M., Rebei, A., \\& Khazaeli, S. (2025). Automated Legal Brief Drafting via Iterative Retrieval-Augmented Generation.",
+    "Rashid, P., Pal, S., Samudrala, V. K., \\textbf{Yedida, R.}, \\& Gehringer, E. (2025). Enhancing Peer Assessment Reliability: A Probabilistic Approach Integrating Formative and Summative Feedback.",
+    "Mehendale, S., Challa, A., \\textbf{Yedida, R.}, Danda, S., Sarkar, S., \\& Saha, S. (2025). Radon–Nikodym Derivative: Re-imagining Anomaly Detection from a Measure Theoretic Perspective.",
+    "\\textbf{Yedida, R.}, \\& Saha, S. (2024). Strong convexity-guided hyper-parameter optimization for flatter losses."
   ],
   "publications": [
     "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{IEEE Transactions on Software Engineering, 51(6)}.",
@@ -601,14 +624,14 @@
       "date": ["2025-03-10", null],
       "title": "Google Developer Expert - ML and GCP",
       "details": [
-        "The Google Developer Experts program is a global network of highly experienced technology experts, influencers, and thought leaders who have expertise in Google technologies, are active leaders in the space, natural mentors, and contribute to the wider developer and startup ecosystem."
+        "A global network of experts recognized by Google for deep technical expertise, community leadership, and mentorship."
       ]
     },
     {
       "date": ["2022-10-20", "2025-03-10"],
       "title": "Google Cloud Champion Innovator - Cloud AI/ML",
       "details": [
-        "Champion Innovators are a global network of more than 500 professionals, nominated by Googlers, who are technical experts in Google Cloud products and services. Each Champion specializes in one of nine different technical categories. In 2025, the Champion Innovators program was merged into the Google Developer Experts program."
+        "A Googler-nominated global network of 500+ technical experts in Google Cloud; merged into the Google Developer Experts program in 2025."
       ]
     },
     {
@@ -650,7 +673,7 @@
     },
     {
       "title": "Reviewer",
-      "details": "TSE 2025-2026; NeurIPS 2023, 2025; EMSE 2021, 2025; ASEj 2025; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; J. Big Data, 2023; ASE 2023; IEEE SSCI 2020"
+      "details": "TOSEM 2026; TSE 2025-2026; NeurIPS 2023, 2025; EMSE 2021, 2025; ASEj 2025; ICML 2024-2025; ICLR 2024-2025; NCAA 2023-2025; TMLR 2024; Neural Processing Letters 2023-2024; Artificial Intelligence Review 2023; J. Big Data, 2023; ASE 2023; IEEE SSCI 2020"
     },
     {
       "title": "Student Volunteer",

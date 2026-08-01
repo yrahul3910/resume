@@ -1,5 +1,16 @@
 # List of tags used in `data.json`
-tags = {"master", "sde", "sde_emp", "ml", "ml_emp", "academic", "ta", "phd", "hidden"}
+tags = {
+    "master",
+    "sde",
+    "sde_emp",
+    "sde_hidden",
+    "ml",
+    "ml_emp",
+    "academic",
+    "ta",
+    "phd",
+    "hidden",
+}
 for tag in tags:
     # It's important to use `globals()`!
     if tag not in globals():
@@ -16,6 +27,7 @@ ml_emp = True
 
 # Always hide `hidden` items
 hidden = False
+sde_hidden = False
 
 outFile.writelines(
     [

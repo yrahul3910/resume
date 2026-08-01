@@ -25,6 +25,8 @@ if ml:
         PARSE publications
     else:
         PARSE publications latest_k=5
+    if academic:
+        PARSE preprints
     PARSE funding
     PARSE service
 
