@@ -224,7 +224,7 @@
         }
       ],
       "details": [
-        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (1,900 pages/s over 330 papers; M4 Pro) and a RAG library with support for multiple providers and tool calling."
+        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (p50 $\\approx$ 2,400 pages/s, p90 $\\approx$ 900 pages/s; M4 Pro) and a RAG library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },
