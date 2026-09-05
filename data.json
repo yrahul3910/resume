@@ -57,9 +57,9 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "Reduced customer-facing product runtime by 24.8\\% and cut time spent at peak memory from 86.4\\% to 68\\% of the runtime via lazy module loading, LLM call profiling, and parallelization.",
-            "As part of a 3-person team, improved complaint drafting usefulness from 40\\% to 86\\% and motion drafting from 59.2\\% to 76\\%.",
             "Led the migration from RAG to an agentic legal drafting system as tech lead, and own its continued development.",
+            "Reduced customer-facing product runtime by 24.8\\% and cut time spent at peak memory from 86.4\\% to 68\\% via lazy module loading, LLM call profiling, and parallelization.",
+            "As part of a 3-person team, improved complaint drafting usefulness (as rated by attorney reviewers) from 40\\% to 86\\% and motion drafting from 59.2\\% to 76\\%.",
             "Developed a fast (median 12ms) passage filtering approach based on contrastive loss.",
             "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
@@ -86,7 +86,7 @@
             "\\texttt{lnav} configuration for structured log viewing",
             "--- Innovation ---",
             "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters. Median 12ms latency ($n = 40$).",
-            "Agentic system: ADK; strong typing; led design and dev, acted as informed captain; ",
+            "Agentic system: ADK; strong typing; led design and dev, acted as informed captain",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, TypeScript, Tailwind"
           ],
           "tags": ["hidden"]
@@ -576,6 +576,10 @@
     },
     {
       "name": "RAG",
+      "type": "ML/AI"
+    },
+    {
+      "name": "LLM evaluation",
       "type": "ML/AI"
     },
     {
