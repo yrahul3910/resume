@@ -209,7 +209,8 @@
       "details": [
         "Work-in-progress: writing an interpreter for DreamBerd, a satirical language with support for zero-quote strings, three-valued logic, and other exotic features"
       ],
-      "tags": ["sde_hidden"]
+      "tags": ["sde"],
+      "hidden": true
     },
     {
       "title": "The 1 Billion Row Challenge (1BRC)",
@@ -307,7 +308,8 @@
       "details": [
         "Mined Google Takeout and Meta data exports to predict which Amazon best-sellers to advertise to a user (DistilGPT-2, 0.6 F-1 score)."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "Threaded Discussions Website",
@@ -356,7 +358,8 @@
       "details": [
         "Identified novel drug repurposing hypotheses by text mining transcripts of an NPR medical radio show, and verified results using a knowledge graph."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "Personalized Chatbot",
@@ -371,7 +374,8 @@
       "details": [
         "Fine-tuned a GPT-2 345M model on 730k messages from Telegram logs to create a personalized chatbot."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "Intelligent Tutoring System",
@@ -386,7 +390,8 @@
       "details": [
         "Implemented an Intelligent Tutoring System backend using Bayesian Knowledge Tracing and a novel question selection algorithm."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "Human Activity Data Project",
@@ -401,7 +406,8 @@
       "details": [
         "Collected personal activity data for 9 months, grouped tasks into 21 categories. Analyzed most productive hours of the day."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "Astronomy Image Restoration",
@@ -416,7 +422,8 @@
       "details": [
         "Developed a machine learning approach to restore astronomical images affected by PSF anisotropy and smearing in crowded-field photometry. Improved data retention and accuracy in differential imaging analysis of long-baseline optical time series."
       ],
-      "tags": ["ml"]
+      "tags": ["ml"],
+      "hidden": true
     },
     {
       "title": "JournalBear",
