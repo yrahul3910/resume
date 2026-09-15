@@ -9,10 +9,7 @@ BEGIN
 
 PARSE personalInfo
 
-// For ML (industry), swap location of education and skills.
-if not academic:
-  PARSE skills
-else:
+if academic:
   PARSE education
 
 if master:
@@ -20,27 +17,20 @@ if master:
 else:
   PARSE employment after_date="2021-01-01"
 
-if ml:
-    if academic or master:
-        PARSE publications
-    else:
-        PARSE publications latest_k=5
-    if academic:
-        PARSE preprints
+if academic:
+    PARSE publications
+    PARSE preprints
     PARSE funding
     PARSE service
-
-PARSE honors
-
-if academic:
-  PARSE talks
-
-if master:
-    PARSE projects
-elif not academic:
-    PARSE projects latest_k=5
-
-if not academic:
-  PARSE education
+    PARSE honors
+    PARSE talks
+    if master:
+        PARSE projects
+    PARSE skills
 else:
-  PARSE skills
+    PARSE projects latest_k=5
+    PARSE skills
+    PARSE education
+    PARSE honors show_details=False
+    if ml:
+        PARSE publications latest_k=5

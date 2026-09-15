@@ -37,8 +37,8 @@ Specfile --> Python files --> LaTeX files --> PDFs
 | Config | Included |
 | --- | --- |
 | `master` | Everything: full employment history, all projects, full publications, preprints, funding, service, and talks, with academic ordering (education first). |
-| `sde` | Skills first, employment in last 5 years, and the 5 most recent `sde`-tagged projects. No research sections. |
-| `ml` | Skills first, employment in last 5 years, the 5 most recent `ml`-tagged projects, the 5 most recent publications, plus funding and service. |
+| `sde` | Employment first, including Amazon internships, followed by the 5 most recent `sde`-tagged projects, skills, education, and all visible honors without descriptions. No research sections. |
+| `ml` | Employment first, including PhD research and excluding Amazon internships, followed by the 5 most recent `ml`-tagged projects, skills, education, all visible honors without descriptions, and the 5 most recent publications. |
 | `academic` | Education first, employment in last 5 years, full publications, preprints, funding, service, and invited talks. No projects section. |
 
 Some tags (`hidden`, `sde_hidden`, `ta`) are never enabled by any config, so entries carrying them render nowhere. This lets me maintain detail that doesn't fit a resume but is worth keeping, such as more detailed stats, early-stage projects, a brag sheet, etc. right next to the visible content it backs, ready to be promoted to a visible tag later.

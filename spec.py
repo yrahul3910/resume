@@ -273,18 +273,19 @@ class DataParser:
 
         self.file.write("\\resumeSubHeadingListEnd\n\n")
 
-    def parse_honors(self):
-        if len(self.data["honors"]) == 0:
+    def parse_honors(self, *, show_details: bool = True) -> None:
+        """Render visible honors in source order, optionally without descriptions."""
+        honors = [
+            honor for honor in self.data["honors"] if not honor.get("hidden", False)
+        ]
+        if not honors:
             return
 
         self.file.write("\n")
         self.file.write("\\section{Honors}\n")
         self.file.write("\\resumeSubHeadingListStart\n")
 
-        for honor in self.data["honors"]:
-            if honor.get("hidden", False):
-                continue
-
+        for honor in honors:
             if isinstance(honor["date"], str):
                 date = self._get_str_from_date(honor["date"])
             elif isinstance(honor["date"], list):
@@ -292,7 +293,7 @@ class DataParser:
             else:
                 raise ValueError(f"Honor {honor['title']} needs a valid date.")
 
-            if "details" in honor:
+            if show_details and "details" in honor:
                 self.file.write(
                     rf"\resumeSubheading{{{honor['title']}}}{{{date}}}{{}}{{}}"
                 )
