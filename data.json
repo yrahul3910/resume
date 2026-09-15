@@ -180,6 +180,21 @@
   ],
   "projects": [
     {
+      "title": "pi-permission-system (maintained fork)",
+      "dates": ["2026-05-21", null],
+      "skills": ["TypeScript", "Node.js"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/pi-permission-system"
+        }
+      ],
+      "details": [
+        "Maintain a permission-system fork for the Pi coding agent. Redesigned shell permissions using grammar-based analysis of pipelines, substitutions, and redirections, with protected-path checks and argument-aware approval rules. Extended enforcement to background commands and fixed concurrent subagent approval handling."
+      ],
+      "tags": ["sde", "ml"]
+    },
+    {
       "title": "DreamBerd Interpreter",
       "dates": ["2026-07-01", null],
       "skills": ["Rust"],
@@ -243,7 +258,7 @@
         }
       ],
       "details": [
-        "Sole developer of an ML utilities Python package used by multiple research groups for reproducible experiments. Downloaded 73k+ times on PyPI."
+        "Sole developer of an ML utilities Python package used by multiple research groups for reproducible experiments. Downloaded 74k+ times on PyPI."
       ],
       "tags": ["ml"]
     },
