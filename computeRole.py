@@ -28,14 +28,3 @@ ml_emp = True
 # Always hide `hidden` items
 hidden = False
 sde_hidden = False
-
-outFile.writelines(
-    [
-        r"\newcommand{\role}{}",
-        r"\newif\ifroleset",
-        r"\rolesetfalse",
-    ]
-)
-
-if sde and not master:
-    outFile.writelines([r"\renewcommand{\role}{ Software Developer}", r"\rolesettrue"])

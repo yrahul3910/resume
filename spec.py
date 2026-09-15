@@ -75,7 +75,7 @@ class DataParser:
 
         self.file.write(r"\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}")
         self.file.write("\n")
-        self.file.write(r"\textbf{\Large " + name + r"}\ifroleset,\fi \role &")
+        self.file.write(r"\textbf{\Large " + name + r"} &")
         self.file.write("\n")
         self.file.write(r"\href{mailto:" + email + "}{" + email + r"} \\")
 
@@ -92,12 +92,8 @@ class DataParser:
         self.file.write(r" \\ \end{tabular*}")
         self.file.write("\n")
 
-        # Skip on the academic CV (wrong register there); master sets academic
-        # too but should keep the line.
         if not self.vars.get("academic", False) or self.vars.get("master", False):
-            self.file.write(
-                "\\small{You can \\href{https://github.com/yrahul3910/resume/}{view this résumé's source code!}}"
-            )
+            self.file.write("\\small\n")
 
     def parse_education(self):
         if len(self.data["education"]) == 0:
