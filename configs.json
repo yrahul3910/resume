@@ -9,7 +9,8 @@
             "sde = True"
         ],
         "ml": [
-            "ml = True"
+            "ml = True",
+            "phd = True"
         ],
         "academic": [
             "ml = True",

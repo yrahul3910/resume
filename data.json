@@ -57,10 +57,11 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", null],
           "details": [
-            "Led the migration from RAG to an agentic legal drafting system as tech lead, and own its continued development.",
-            "Reduced customer-facing product runtime by 24.8\\% and cut time spent at peak memory from 86.4\\% to 68\\% via lazy module loading, LLM call profiling, and parallelization.",
-            "As part of a 3-person team, improved complaint drafting usefulness (as rated by attorney reviewers) from 40\\% to 86\\% and motion drafting from 59.2\\% to 76\\%.",
-            "Developed a fast (median 12ms) passage filtering approach based on contrastive loss.",
+            "Technical lead for an agentic legal drafting system; led its migration from RAG and continue to own development.",
+            "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
+            "Profiled high pod memory usage and introduced lazy module loading, reducing time at peak memory from 86.4\\% to 68\\% of runtime.",
+            "On a 3-person team, increased the share of drafts rated suitable for users by attorney reviewers from 40\\% to 86\\% for complaints and 59.2\\% to 76\\% for motions.",
+            "Built a contrastive-learning filter to remove unrelated legal passages from search results; median filtering latency of 12ms across 40 queries.",
             "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, Rust, TypeScript, Tailwind"
@@ -72,10 +73,11 @@
           "dates": ["2024-05-24", null],
           "details": [
             "--- Performance improvements ---",
-            "Implemented lazy-loading for modules, reducing peak memory usage time from 86.4\\% to 68\\% of the runtime",
+            "Profiled unexpectedly high pod memory usage, identified module allocations, and introduced lazy loading. Reduced the share of runtime spent at peak memory from 86.4\\% to 68\\%; this measures duration at peak, not a reduction in peak memory allocation.",
             "Profiled LLM calls and fixed inefficiencies, leading to a 10\\% reduction in runtime.",
             "Refactored and parallelized code for a 16.4\\% speedup.",
             "--- Drafting improvements ---",
+            "Usefulness is the percentage of drafts rated suitable for users by attorney reviewers.",
             "Complaint improvements: 40\\% --> 70\\% --> 86\\% usefulness.",
             "Motion improvements: 59.2\\% --> 81.6\\% --> 76\\% usefulness.",
             "Proposed tabu search and Bayesian optimization methods for prompt tuning.",
@@ -85,7 +87,7 @@
             "TSX-based UI to visualize agentic system runtime steps",
             "\\texttt{lnav} configuration for structured log viewing",
             "--- Innovation ---",
-            "Passage filtering: InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters. Median 12ms latency ($n = 40$).",
+            "Passage filtering removes unrelated legal passages returned by retrieval. InfoNCE + alignment and uniformity losses, greedy search based on ultrafilters. Median filtering latency of 12ms across 40 search queries; 40 is the query count, not the number of passages.",
             "Agentic system: ADK; strong typing; led design and dev, acted as informed captain",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, TypeScript, Tailwind"
           ],
@@ -239,7 +241,7 @@
         }
       ],
       "details": [
-        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (p50 $\\approx$ 2,400 pages/s, p90 $\\approx$ 900 pages/s; M4 Pro) and a RAG library with support for multiple providers and tool calling."
+        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (median throughput $\\approx$ 2,400 pages/s across 11 PDFs; M4 Pro) and a RAG library with support for multiple providers and tool calling."
       ],
       "tags": ["sde", "ml"]
     },

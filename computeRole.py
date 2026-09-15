@@ -21,8 +21,7 @@ if master:
     for tag in tags - {"ta"}:
         globals()[tag] = True
 
-# Always include concise employment records
-sde_emp = True
+sde_emp = globals()["sde"] or globals()["academic"]
 ml_emp = True
 
 # Always hide `hidden` items
