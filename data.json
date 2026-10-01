@@ -65,7 +65,7 @@
           "position": "Senior Data Scientist II",
           "dates": ["2026-10-04", null],
           "details": [
-            "System One (Jev-like) models: 15 models, 4 LLM baselines, 6 tasks, 570 total samples. Running locally (M4 Pro), best model was GLiNER-2.5-Decide, latency median: 177 ms, p95: 254 ms. On held-out test set, macro-F1: 92.7\\%, accuracy: 97.3\\%"
+            "System One (Jev-like) models: 15 models, 4 LLM baselines, 6 tasks. 570 total samples for fine-tuning. Running locally (M4 Pro), for best fine-tuned model, latency median: 177 ms, p95: 254 ms. On held-out test set, macro-F1: 92.7\\%, accuracy: 97.3\\%"
           ],
           "tags": ["hidden"]
         },
@@ -260,14 +260,14 @@
         }
       ],
       "details": [
-        "Built an academic question-answering and semantic search system over a user's Zotero library. Wrote a custom PDF parser for academic papers (median throughput $\\approx$ 2,400 pages/s across 11 PDFs; M4 Pro) and a RAG library with support for multiple providers and tool calling."
+        "Built an academic question-answering and semantic search system over a user's Zotero library. Developed a Rust RAG library with configurable LLM, embedding, and reranking providers, tool calling, and limits on concurrent embedding requests. Wrote a custom PDF parser for academic papers (median throughput $\\approx$ 2,400 pages/s across 11 PDFs; M4 Pro)."
       ],
       "tags": ["sde", "ml"]
     },
     {
       "title": "RAISE",
       "dates": ["2020-08-01", "2026-06-12"],
-      "skills": ["Python", "Keras"],
+      "skills": ["Python", "Keras", "PyTorch"],
       "links": [
         {
           "display": "GitHub",
@@ -279,7 +279,7 @@
         }
       ],
       "details": [
-        "Sole developer of a Python package for reproducible ML experiments, providing data loading, evaluation metrics, statistical tests, and reference implementations of research algorithms. Used by multiple research groups; downloaded 79k+ times on PyPI."
+        "Sole developer of a Python package for reproducible ML experiments, providing data loading, evaluation metrics, statistical tests, and reference implementations of research algorithms. Uses Keras with a PyTorch backend; tested on Python 3.11-3.14 across Linux, Windows, and Apple Silicon macOS. Used by multiple research groups; downloaded 79k+ times on PyPI."
       ],
       "tags": ["ml"]
     },
