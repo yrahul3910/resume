@@ -284,6 +284,25 @@
       "tags": ["ml"]
     },
     {
+      "title": "Flatness-guided HPO",
+      "dates": ["2023-11-14", "2026-05-05"],
+      "skills": ["Python", "PyTorch", "Keras"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/flatness-guided-hpo"
+        },
+        {
+          "display": "Paper",
+          "url": "https://arxiv.org/abs/2402.05025"
+        }
+      ],
+      "details": [
+        "Developed a hyper-parameter optimizer using closed-form loss-curvature estimates to select configurations with flatter losses. Implemented comparative benchmarks on MNIST, SVHN, OpenML, and Bayesmark."
+      ],
+      "tags": ["ml"]
+    },
+    {
       "title": "Programmable Resumes",
       "dates": ["2023-08-01", "2025-03-02"],
       "skills": ["Python"],
