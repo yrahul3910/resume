@@ -76,7 +76,7 @@
             "Technical lead for an agentic legal drafting system; led its migration from RAG and continue to own development.",
             "On a 3-person team, increased the share of drafts rated suitable for users by attorney reviewers from 40\\% to 86\\% for complaints and 59.2\\% to 76\\% for motions.",
             "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
-            "Built a contrastive-learning filter to remove unrelated legal passages from search results; median filtering latency of 12ms across 40 queries.",
+            "Built a contrastive-learning filter using InfoNCE with alignment and uniformity losses to remove unrelated legal passages from search results; median filtering latency of 12 ms across 40 queries.",
             "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
             "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "Profiled high pod memory usage and introduced lazy module loading, reducing time at peak memory from 86.4\\% to 68\\% of runtime.",
@@ -279,7 +279,7 @@
         }
       ],
       "details": [
-        "Sole developer of an ML utilities Python package used by multiple research groups for reproducible experiments. Downloaded 79k+ times on PyPI."
+        "Sole developer of a Python package for reproducible ML experiments, providing data loading, evaluation metrics, statistical tests, and reference implementations of research algorithms. Used by multiple research groups; downloaded 79k+ times on PyPI."
       ],
       "tags": ["ml"]
     },
@@ -313,7 +313,7 @@
         }
       ],
       "details": [
-        "Developed a specification and implementation for modular, customizable resumes with support for two popular LaTeX templates. Wrote this resume using this tool."
+        "Developed a resume specification language and Python compiler that generates PDFs from structured resume data via LaTeX. Supports tag-based role filtering, two LaTeX templates, and parallel builds. Wrote this resume using this tool."
       ],
       "tags": ["sde"]
     },
@@ -481,7 +481,7 @@
         }
       ],
       "details": [
-        "Cross-platform journaling app with AES-256 encryption and separate native apps for iOS and macOS. Rated 4/5 by Softpedia."
+        "Built and shipped a journaling app with AES-256 encryption, an Electron/React desktop client, and native SwiftUI apps for iOS and macOS."
       ],
       "tags": ["sde"]
     },
