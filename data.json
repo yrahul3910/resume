@@ -333,6 +333,25 @@
       "tags": ["sde"]
     },
     {
+      "title": "GHOST",
+      "dates": ["2020-06-03", "2022-03-31"],
+      "skills": ["Python", "Keras"],
+      "links": [
+        {
+          "display": "GitHub",
+          "url": "https://github.com/yrahul3910/ghost-dl"
+        },
+        {
+          "display": "Paper",
+          "url": "https://arxiv.org/abs/2008.03835"
+        }
+      ],
+      "details": [
+        "Developed the GHOST reference implementation for software defect prediction, combining adaptive oversampling with DODGE hyper-parameter optimization. Implemented configurable ablation experiments and Scott-Knott statistical comparisons using RAISE."
+      ],
+      "tags": ["ml"]
+    },
+    {
       "title": "Google/Meta Data Mining",
       "dates": ["2021-02-01", "2021-05-01"],
       "skills": ["Python", "Keras"],
