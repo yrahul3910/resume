@@ -74,12 +74,12 @@
           "dates": ["2024-05-24", "2026-10-04"],
           "details": [
             "Technical lead for an agentic legal drafting system; led its migration from RAG and continue to own development.",
-            "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
-            "Profiled high pod memory usage and introduced lazy module loading, reducing time at peak memory from 86.4\\% to 68\\% of runtime.",
             "On a 3-person team, increased the share of drafts rated suitable for users by attorney reviewers from 40\\% to 86\\% for complaints and 59.2\\% to 76\\% for motions.",
+            "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
             "Built a contrastive-learning filter to remove unrelated legal passages from search results; median filtering latency of 12ms across 40 queries.",
-            "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
+            "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
+            "Profiled high pod memory usage and introduced lazy module loading, reducing time at peak memory from 86.4\\% to 68\\% of runtime.",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, Rust, TypeScript, Tailwind"
           ],
           "tags": ["ml_emp"]
