@@ -54,8 +54,24 @@
       "location": "Raleigh, NC",
       "positions": [
         {
+          "position": "Senior Data Scientist II",
+          "dates": ["2026-10-04", null],
+          "details": [
+            "Benchmarked 15 open-source structured decision models (System One) against four LLM baselines across six classification tasks; fine-tuned three Pareto-optimal models (best-model held-out macro-F1: 92.7\\%) to improve latency (M4 Pro, median: 177 ms, p95: 254 ms)."
+          ],
+          "tags": ["ml_emp"]
+        },
+        {
+          "position": "Senior Data Scientist II",
+          "dates": ["2026-10-04", null],
+          "details": [
+            "System One (Jev-like) models: 15 models, 4 LLM baselines, 6 tasks, 570 total samples. Running locally (M4 Pro), best model was GLiNER-2.5-Decide, latency median: 177 ms, p95: 254 ms. On held-out test set, macro-F1: 92.7\\%, accuracy: 97.3\\%"
+          ],
+          "tags": ["hidden"]
+        },
+        {
           "position": "Senior Data Scientist I",
-          "dates": ["2024-05-24", null],
+          "dates": ["2024-05-24", "2026-10-04"],
           "details": [
             "Technical lead for an agentic legal drafting system; led its migration from RAG and continue to own development.",
             "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
@@ -70,7 +86,7 @@
         },
         {
           "position": "Senior Data Scientist I",
-          "dates": ["2024-05-24", null],
+          "dates": ["2024-05-24", "2026-10-04"],
           "details": [
             "--- Performance improvements ---",
             "Profiled unexpectedly high pod memory usage, identified module allocations, and introduced lazy loading. Reduced the share of runtime spent at peak memory from 86.4\\% to 68\\%; this measures duration at peak, not a reduction in peak memory allocation.",
@@ -103,9 +119,9 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "\\textbf{State-of-the-art hyper-parameter optimization:} Proposed a novel hyper-parameter optimization method that outperforms prior SOTA and is 36.4\\% faster.",
-            "\\textbf{Better, faster deep learning for SE:} Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
-            "\\textbf{Semi-supervised learning:} Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels.",
+            "\\textbf{Hyper-parameter optimization:} Proposed an optimizer that outperformed prior methods and ran 36.4\\% faster than Hyperopt on datasets used in the NeurIPS 2020 BBO Challenge.",
+            "\\textbf{Defect prediction:} Proposed GHOST, an adaptive oversampling and hyper-parameter tuning pipeline that outperformed prior deep-learning methods on 14 of 20 defect-prediction datasets.",
+            "\\textbf{Semi-supervised learning:} Developed GHOST2 for identifying actionable static-analysis warnings; achieved median AUC of 0.92 across eight open-source Java projects using 10\\% of the training labels.",
             "\\textbf{Teaching:} TA for 830 students over 5 semesters across CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
           ],
           "tags": ["phd"]
@@ -114,7 +130,9 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "HPO: 36.4\\% compared to Hyperopt, the fastest of the other SOTA optimizers. Compared on same datasets used in NeurIPS BBO Challenge 2020; p = 0.016."
+            "HPO: 36.4\\% compared to Hyperopt, the fastest of the other SOTA optimizers. Compared on same datasets used in NeurIPS BBO Challenge 2020; p = 0.016.",
+            "Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
+            "Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels."
           ],
           "tags": ["hidden"]
         },
@@ -248,7 +266,7 @@
     },
     {
       "title": "RAISE",
-      "dates": ["2020-08-01", "2025-06-12"],
+      "dates": ["2020-08-01", "2026-06-12"],
       "skills": ["Python", "Keras"],
       "links": [
         {
@@ -538,11 +556,12 @@
     "\\textbf{Yedida, R.}, \\& Saha, S. (2024). Strong convexity-guided hyper-parameter optimization for flatter losses."
   ],
   "publications": [
+    "Nagarsekar, A., Bhat, M. P. A., Nesarkar, A., Godhwani, V., \\textbf{Yedida, R.}, Challa, A., Danda, S., \\& Saha, S. (2026). A Generalisation Signal Need Not Be a Model-Selection Signal. In \\textit{I Can't Believe It's Not Better: Failure Modes of AI in Biology Workshop (NeurIPS 2026)}.",
     "\\textbf{Yedida, R.}, \\& Menzies, T. (2025). Is Hyper-Parameter Optimization Different for Software Analytics? \\textit{IEEE Transactions on Software Engineering, 51(6)}.",
     "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
     "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, 49(4), 2856-2872}.",
     "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications, 219, 119673}.",
-    "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR).}",
+    "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR)}.",
     "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, 48(8), 3103-3116}.",
     "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, 48(8), 2939-2954}.",
     "Yang, X., Chen, J., \\textbf{Yedida, R.}, Yu, Z., \\& Menzies, T. (2021). Learning to recognize actionable static code warnings (is intrinsically easy). \\textit{Empirical Software Engineering, 26(3), 1-24}.",

@@ -5,8 +5,7 @@ all:
 	progres -o pdf -d
 	cp pdf/sde.pdf "pdf/RahulYedida_SoftwareEngineer.pdf"
 	mv pdf/sde.pdf "pdf/RahulYedida_AIEngineer.pdf"
-	cp pdf/ml.pdf "pdf/RahulYedida_MLEngineer.pdf"
-	mv pdf/ml.pdf "pdf/RahulYedida_ResearchEngineer.pdf"
+	mv pdf/ml.pdf "pdf/RahulYedida_MLEngineer.pdf"
 	mv pdf/academic.pdf "pdf/RahulYedida_ResearchScientist.pdf"
 
 clean:
