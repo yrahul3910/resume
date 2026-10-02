@@ -57,7 +57,7 @@
           "position": "Senior Data Scientist II",
           "dates": ["2026-10-04", null],
           "details": [
-            "Benchmarked 15 open-source structured decision models (System One) against four LLM baselines across six classification tasks; fine-tuned three Pareto-optimal models (best-model held-out macro-F1: 92.7\\%) to improve latency (M4 Pro, median: 177 ms, p95: 254 ms)."
+            "Fine-tuned small structured-decision models to match LLM-baseline accuracy (macro-F1 92.7\\%) at 177 ms median latency on-device, after benchmarking 15 models across 6 tasks."
           ],
           "tags": ["ml_emp"]
         },
@@ -119,10 +119,11 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "\\textbf{Hyper-parameter optimization:} Proposed an optimizer that outperformed prior methods and ran 36.4\\% faster than Hyperopt on datasets used in the NeurIPS 2020 BBO Challenge.",
-            "\\textbf{Defect prediction:} Proposed GHOST, an adaptive oversampling and hyper-parameter tuning pipeline that outperformed prior deep-learning methods on 14 of 20 defect-prediction datasets.",
-            "\\textbf{Semi-supervised learning:} Developed GHOST2 for identifying actionable static-analysis warnings; achieved median AUC of 0.92 across eight open-source Java projects using 10\\% of the training labels.",
-            "\\textbf{Teaching:} TA for 830 students over 5 semesters across CSC 230 (C and Software Tools), CSC 510 (Software Engineering), and CSC 591/791 (Automated Software Engineering)"
+            "\\textbf{State-of-the-art hyper-parameter optimization:} Derived loss-curvature estimates for smoothness- and flatness-guided search; the smoothness-based method matched or beat prior SOTA on 17 of 19 software datasets.",
+            "\\textbf{Better, faster deep learning for SE:} Introduced fuzzy oversampling and optimized neural-network hyperparameters, surpassing prior SOTA with median relative gains of 15\\% in defect-prediction F1 and 12\\% in AUC across four code smells. Built tuned feedforward models that matched or beat SOTA across 15 issue-lifetime benchmarks in minutes instead of hours.",
+            "\\textbf{Microservice partitioning:} Developed a graph neural network partitioner with a custom weighted loss; reduced the share of cross-service calls by a median 66\\% versus prior SOTA across four applications.",
+            "\\textbf{Semi-supervised learning:} Combined oversampling, nearest-neighbor labeling, and hyperparameter optimization for state-of-the-art static-analysis warning triage: median AUC 0.92 on eight Java projects using 10\\% of training labels.",
+            "\\textbf{Teaching:} TA for 830 students over five semesters in C programming and software engineering."
           ],
           "tags": ["phd"]
         },
@@ -130,9 +131,24 @@
           "position": "PhD Student",
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
-            "HPO: 36.4\\% compared to Hyperopt, the fastest of the other SOTA optimizers. Compared on same datasets used in NeurIPS BBO Challenge 2020; p = 0.016.",
-            "Improved defect prediction by up to 123\\% (F-1 score), code smell detection by up to 30\\% (AUC), issue lifetime prediction by up to 76\\% (accuracy), automated microservice partitioning by up to 285\\% (modularity) compared to prior SOTA.",
-            "Achieved state-of-the-art results (up to 100\\% improvement in AUC) on static code warnings analysis using 10\\% of the labels."
+            "--- State-of-the-art hyper-parameter optimization ---",
+            "SMOOTHIE: derived loss-smoothness estimates for feedforward networks, logistic regression, and Gaussian naive Bayes. Ranked 30 candidate configurations by estimated smoothness (max Hessian norm, after one epoch) and fully trained only five. The estimates make curvature-guided search practical without computing the full Hessian.",
+            "SMOOTHIE results: matched or beat prior SOTA on 17 of 19 SE datasets (four wins, 13 ties, two losses). The SE tasks covered static-analysis warnings, binary and multiclass issue lifetime, and defect prediction. The evaluation also included five non-SE datasets.",
+            "SMOOTHIE runtime: 4.7x faster than BOHB and 8.3x faster than DEHB on the Chromium two-class issue-lifetime benchmark, similar speedups on Eclipse and Firefox.",
+            "--- Better, faster deep learning for SE ---",
+            "GHOST: introduced fuzzy oversampling and combined it with feedforward networks and DODGE hyperparameter optimization for defect prediction. Fuzzy oversampling adds synthetic minority-class samples in concentric neighborhoods around existing samples, with fewer samples farther away and sampling density adapted to class imbalance. It pushes decision boundaries away from minority examples. The sampling procedure itself does not require hyperparameter tuning.",
+            "Defect prediction: evaluated 16 within-project and 20 cross-project comparisons against prior deep-learning SOTA. 23 wins, 7 ties, 6 losses. Across all 36 paired F1 scores, median relative improvement is 14.91\\%; median absolute improvement is 0.091 on the 0-1 F1 scale.",
+            "Code smells: evaluated fuzzy oversampling across feature envy, long method, large class, and misplaced class in ten projects, for 40 project/smell comparisons. Against the reproduced prior SOTA, median relative AUC improvement is 12.14\\%; median absolute AUC improvement is 0.1075. 28 wins, 8 ties, and 4 losses.",
+            "SIMPLE: combined preprocessing and DODGE hyperparameter optimization with feedforward networks for issue-lifetime prediction. The 15 benchmarks comprise Firefox, Chromium, and Eclipse with two, three, five, seven, and nine lifetime classes each. This pipeline does not use GHOST's fuzzy oversampling.",
+            "Issue-lifetime results: matched or beat the prior DeepTriage SOTA across all 15 settings. Median paired top-1 accuracy improvement is nine percentage points, or 29.63\\% relative.",
+            "Issue-lifetime runtime: Experiment totals about 1.8-5.2 minutes per dataset/run for SIMPLE versus 5.3 hours for DeepTriage.",
+            "--- Microservice partitioning ---",
+            "DEEPLY: developed a graph neural network partitioner extending CO-GCN, with a custom weighted loss and changes to training and clustering. Used Hyperopt for hyperparameter search; the comparison applied Hyperopt to all six methods.",
+            "--- Semi-supervised learning ---",
+            "GHOST2: combined SMOTE, GHOST fuzzy oversampling, SMOOTH nearest-neighbor labeling, and DODGE hyperparameter optimization to distinguish actionable FindBugs warnings from false alarms. SMOOTH uses a small labeled subset to assign majority labels from nearby labeled examples to the remaining training samples.",
+            "Warning-triage results: median AUC 0.92 across eight open-source Java projects using about 10\\% of training labels. Compared against traditional models, a CNN, and off-the-shelf CodeBERT.",
+            "--- Teaching ---",
+            "TA for 830 students over five semesters: 159 in CSC 230 (C and Software Tools), 233 and 289 in CSC 510 (Software Engineering), and 97 and 52 in CSC 591/791 (Automated Software Engineering). These are course enrollments across the five semesters, with shared TA teams."
           ],
           "tags": ["hidden"]
         },
@@ -692,7 +708,7 @@
       "type": "Databases"
     },
     {
-      "name": "MySQL",
+      "name": "SQL",
       "type": "Databases"
     },
     {
