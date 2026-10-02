@@ -1,6 +1,6 @@
 # Resume
 
-This repository contains my most up-to-date resumes. There are four, all built from the same source: [master](pdf/master.pdf) (the kitchen-sink CV), [sde](pdf/sde.pdf), [ml](pdf/ml.pdf), and [academic](pdf/academic.pdf). Because of the complexities of compiling multiple PDFs, the code is based on a custom templating engine I wrote, called [progres](https://github.com/yrahul3910/programmable-resumes). To compile this code, you will need to have that installed.
+This repository contains my most up-to-date resumes. There are four, all built from the same source: [master](pdf/master.pdf) (the kitchen-sink CV), [SWE](pdf/RahulYedida_SoftwareEngineer.pdf), [ML Engineer](pdf/RahulYedida_MLEngineer.pdf), and [academic](pdf/RahulYedida_ResearchScientist.pdf). Because of the complexities of compiling multiple PDFs, the code is based on a custom templating engine I wrote, called [progres](https://github.com/yrahul3910/programmable-resumes). To compile this code, you will need to have that installed.
 
 ## Compiling
 

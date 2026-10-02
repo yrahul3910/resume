@@ -1,7 +1,7 @@
 .PHONY: all
 
 all:
-	rm pdf/*
+	rm -f pdf/*
 	progres -o pdf -d
 	cp pdf/sde.pdf "pdf/RahulYedida_SoftwareEngineer.pdf"
 	mv pdf/sde.pdf "pdf/RahulYedida_AIEngineer.pdf"

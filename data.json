@@ -184,7 +184,7 @@
             "Implemented and shipped profile locks for Prime Video on Echo Show devices.",
             "\\textbf{Technology:} React Native, TypeScript"
           ],
-          "tags": ["sde_emp"]
+          "tags": ["internships"]
         },
         {
           "position": "Software Dev Engineer Intern",
@@ -193,7 +193,7 @@
             "Developed a full-stack system to publish announcements in scorecards used by delivery service partners.",
             "\\textbf{Technology:} React/Redux, TypeScript, Redux Saga, DynamoDB, Java Spring"
           ],
-          "tags": ["sde_emp"]
+          "tags": ["internships"]
         }
       ]
     }
@@ -260,7 +260,7 @@
         }
       ],
       "details": [
-        "Built an academic question-answering and semantic search system over a user's Zotero library. Developed a Rust RAG library with configurable LLM, embedding, and reranking providers, tool calling, and limits on concurrent embedding requests. Wrote a custom PDF parser for academic papers (median throughput $\\approx$ 2,400 pages/s across 11 PDFs; M4 Pro)."
+        "Built an academic question-answering and semantic search system over a Zotero library. Developed a Rust RAG library with configurable LLM, embedding, and reranking providers, tool calling, and limits on concurrent embedding requests. Wrote a custom PDF parser for academic papers (median throughput $\\approx$ 2,400 pages/s across 11 PDFs; M4 Pro)."
       ],
       "tags": ["sde", "ml"]
     },

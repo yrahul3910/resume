@@ -2,7 +2,7 @@
 tags = {
     "master",
     "sde",
-    "sde_emp",
+    "internships",
     "sde_hidden",
     "ml",
     "ml_emp",

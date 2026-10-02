@@ -3,19 +3,23 @@
     "configs": {
         "master": [
             "master = True",
-            "academic = True"
+            "academic = True",
+            "internships = True"
         ],
         "sde": [
-            "sde = True"
+            "sde = True",
+            "internships = True"
         ],
         "ml": [
             "ml = True",
-            "phd = True"
+            "phd = True",
+            "internships = False"
         ],
         "academic": [
             "ml = True",
             "academic = True",
-            "phd = True"
+            "phd = True",
+            "internships = False"
         ]
     }
 }
