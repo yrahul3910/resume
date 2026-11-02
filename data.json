@@ -120,7 +120,7 @@
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
             "\\textbf{State-of-the-art hyper-parameter optimization:} Derived loss-curvature estimates for smoothness- and flatness-guided search; the smoothness-based method matched or beat prior SOTA on 17 of 19 software datasets.",
-            "\\textbf{Better, faster deep learning for SE:} Introduced fuzzy oversampling and optimized neural-network hyper-parameters, surpassing prior SOTA with median relative gains of 15\\% in defect-prediction F1 and 12\\% in AUC across four code smells. Built tuned feedforward models that matched or beat SOTA across 15 issue-lifetime benchmarks in minutes instead of hours.",
+            "\\textbf{Better, faster deep learning for SE:} Introduced fuzzy oversampling and optimized neural-network hyper-parameters, surpassing prior SOTA with median relative gains of 15\\% in defect-prediction F1 and 12\\% in AUC across four code smells. Built tuned feedforward models that matched or beat prior work across 15 issue-lifetime benchmarks in minutes instead of hours.",
             "\\textbf{Microservice partitioning:} Developed a graph neural network partitioner with a custom weighted loss; reduced the share of cross-service calls by a median 66\\% versus prior SOTA across four applications.",
             "\\textbf{Semi-supervised learning:} Combined oversampling, nearest-neighbor labeling, and hyper-parameter optimization for state-of-the-art static-analysis warning triage: median AUC 0.92 on eight Java projects using 10\\% of training labels.",
             "\\textbf{Teaching:} TA for 830 students over five semesters in C programming and software engineering."
