@@ -57,7 +57,7 @@
           "position": "Senior Data Scientist II",
           "dates": ["2026-10-04", null],
           "details": [
-            "Fine-tuned small structured-decision models to match LLM-baseline accuracy (macro-F1 92.7\\%) at 177 ms median latency on-device, after benchmarking 15 models across 6 tasks."
+            "Fine-tuned small structured-decision models to match LLM-baseline performance (macro-F1 92.7\\%) at 177 ms median latency on-device, after benchmarking 15 models across 6 tasks."
           ],
           "tags": ["ml_emp"]
         },
@@ -73,11 +73,11 @@
           "position": "Senior Data Scientist I",
           "dates": ["2024-05-24", "2026-10-04"],
           "details": [
-            "Technical lead for an agentic legal drafting system; led its migration from RAG and continue to own development.",
+            "Technical lead for an agentic legal drafting system; led its migration from a RAG pipeline and own its ongoing development.",
             "On a 3-person team, increased the share of drafts rated suitable for users by attorney reviewers from 40\\% to 86\\% for complaints and 59.2\\% to 76\\% for motions.",
             "Reduced customer-facing product runtime by 24.8\\% through LLM call profiling and parallelization.",
             "Built a contrastive-learning filter using InfoNCE with alignment and uniformity losses to remove unrelated legal passages from search results; median filtering latency of 12 ms across 40 queries.",
-            "Built team developer tooling: a Rust MITM proxy with request replay, a web UI for visualizing intermediate agent steps, and custom Python lint rules beyond \\texttt{ruff}'s rule set.",
+            "Built team developer tooling: custom Python lint rules beyond \\texttt{ruff}'s set, enforced in CI; a Rust MITM proxy with request replay that teammates use to debug without waiting on upstream responses; and a web UI for visualizing intermediate agent steps.",
             "Mentored an intern on a large-scale, full factorial experiment investigating Pareto-optimal configurations for draft quality and latency.",
             "Profiled high pod memory usage and introduced lazy module loading, reducing time at peak memory from 86.4\\% to 68\\% of runtime.",
             "\\textbf{Technology:} Python, Litestar, Google ADK, React, Rust, TypeScript, Tailwind"
@@ -120,9 +120,9 @@
           "dates": ["2019-08-16", "2024-07-30"],
           "details": [
             "\\textbf{State-of-the-art hyper-parameter optimization:} Derived loss-curvature estimates for smoothness- and flatness-guided search; the smoothness-based method matched or beat prior SOTA on 17 of 19 software datasets.",
-            "\\textbf{Better, faster deep learning for SE:} Introduced fuzzy oversampling and optimized neural-network hyperparameters, surpassing prior SOTA with median relative gains of 15\\% in defect-prediction F1 and 12\\% in AUC across four code smells. Built tuned feedforward models that matched or beat SOTA across 15 issue-lifetime benchmarks in minutes instead of hours.",
+            "\\textbf{Better, faster deep learning for SE:} Introduced fuzzy oversampling and optimized neural-network hyper-parameters, surpassing prior SOTA with median relative gains of 15\\% in defect-prediction F1 and 12\\% in AUC across four code smells. Built tuned feedforward models that matched or beat SOTA across 15 issue-lifetime benchmarks in minutes instead of hours.",
             "\\textbf{Microservice partitioning:} Developed a graph neural network partitioner with a custom weighted loss; reduced the share of cross-service calls by a median 66\\% versus prior SOTA across four applications.",
-            "\\textbf{Semi-supervised learning:} Combined oversampling, nearest-neighbor labeling, and hyperparameter optimization for state-of-the-art static-analysis warning triage: median AUC 0.92 on eight Java projects using 10\\% of training labels.",
+            "\\textbf{Semi-supervised learning:} Combined oversampling, nearest-neighbor labeling, and hyper-parameter optimization for state-of-the-art static-analysis warning triage: median AUC 0.92 on eight Java projects using 10\\% of training labels.",
             "\\textbf{Teaching:} TA for 830 students over five semesters in C programming and software engineering."
           ],
           "tags": ["phd"]
@@ -136,16 +136,16 @@
             "SMOOTHIE results: matched or beat prior SOTA on 17 of 19 SE datasets (four wins, 13 ties, two losses). The SE tasks covered static-analysis warnings, binary and multiclass issue lifetime, and defect prediction. The evaluation also included five non-SE datasets.",
             "SMOOTHIE runtime: 4.7x faster than BOHB and 8.3x faster than DEHB on the Chromium two-class issue-lifetime benchmark, similar speedups on Eclipse and Firefox.",
             "--- Better, faster deep learning for SE ---",
-            "GHOST: introduced fuzzy oversampling and combined it with feedforward networks and DODGE hyperparameter optimization for defect prediction. Fuzzy oversampling adds synthetic minority-class samples in concentric neighborhoods around existing samples, with fewer samples farther away and sampling density adapted to class imbalance. It pushes decision boundaries away from minority examples. The sampling procedure itself does not require hyperparameter tuning.",
+            "GHOST: introduced fuzzy oversampling and combined it with feedforward networks and DODGE hyper-parameter optimization for defect prediction. Fuzzy oversampling adds synthetic minority-class samples in concentric neighborhoods around existing samples, with fewer samples farther away and sampling density adapted to class imbalance. It pushes decision boundaries away from minority examples. The sampling procedure itself does not require hyper-parameter tuning.",
             "Defect prediction: evaluated 16 within-project and 20 cross-project comparisons against prior deep-learning SOTA. 23 wins, 7 ties, 6 losses. Across all 36 paired F1 scores, median relative improvement is 14.91\\%; median absolute improvement is 0.091 on the 0-1 F1 scale.",
             "Code smells: evaluated fuzzy oversampling across feature envy, long method, large class, and misplaced class in ten projects, for 40 project/smell comparisons. Against the reproduced prior SOTA, median relative AUC improvement is 12.14\\%; median absolute AUC improvement is 0.1075. 28 wins, 8 ties, and 4 losses.",
-            "SIMPLE: combined preprocessing and DODGE hyperparameter optimization with feedforward networks for issue-lifetime prediction. The 15 benchmarks comprise Firefox, Chromium, and Eclipse with two, three, five, seven, and nine lifetime classes each. This pipeline does not use GHOST's fuzzy oversampling.",
+            "SIMPLE: combined preprocessing and DODGE hyper-parameter optimization with feedforward networks for issue-lifetime prediction. The 15 benchmarks comprise Firefox, Chromium, and Eclipse with two, three, five, seven, and nine lifetime classes each. This pipeline does not use GHOST's fuzzy oversampling.",
             "Issue-lifetime results: matched or beat the prior DeepTriage SOTA across all 15 settings. Median paired top-1 accuracy improvement is nine percentage points, or 29.63\\% relative.",
             "Issue-lifetime runtime: Experiment totals about 1.8-5.2 minutes per dataset/run for SIMPLE versus 5.3 hours for DeepTriage.",
             "--- Microservice partitioning ---",
-            "DEEPLY: developed a graph neural network partitioner extending CO-GCN, with a custom weighted loss and changes to training and clustering. Used Hyperopt for hyperparameter search; the comparison applied Hyperopt to all six methods.",
+            "DEEPLY: developed a graph neural network partitioner extending CO-GCN, with a custom weighted loss and changes to training and clustering. Used Hyperopt for hyper-parameter search; the comparison applied Hyperopt to all six methods.",
             "--- Semi-supervised learning ---",
-            "GHOST2: combined SMOTE, GHOST fuzzy oversampling, SMOOTH nearest-neighbor labeling, and DODGE hyperparameter optimization to distinguish actionable FindBugs warnings from false alarms. SMOOTH uses a small labeled subset to assign majority labels from nearby labeled examples to the remaining training samples.",
+            "GHOST2: combined SMOTE, GHOST fuzzy oversampling, SMOOTH nearest-neighbor labeling, and DODGE hyper-parameter optimization to distinguish actionable FindBugs warnings from false alarms. SMOOTH uses a small labeled subset to assign majority labels from nearby labeled examples to the remaining training samples.",
             "Warning-triage results: median AUC 0.92 across eight open-source Java projects using about 10\\% of training labels. Compared against traditional models, a CNN, and off-the-shelf CodeBERT.",
             "--- Teaching ---",
             "TA for 830 students over five semesters: 159 in CSC 230 (C and Software Tools), 233 and 289 in CSC 510 (Software Engineering), and 97 and 52 in CSC 591/791 (Automated Software Engineering). These are course enrollments across the five semesters, with shared TA teams."
@@ -615,7 +615,7 @@
     "Baldassarre, M. T., Ernst, N., Hermann, B., Menzies, T., \\& \\textbf{Yedida, R.} (2023). (Re)use of Research Results (is Rampant). \\textit{Communications of the ACM, 66(2), 75-81}.",
     "\\textbf{Yedida, R.}, Kang, H. J., Tu, K., Lo, D., \\& Menzies, T. (2023). How to Find Actionable Static Analysis Warnings: A Case Study with FindBugs. \\textit{IEEE Transactions on Software Engineering, 49(4), 2856-2872}.",
     "\\textbf{Yedida, R.}, Krishna, R., Kalia, A., Menzies, T., Xiao, J., \\& Vukovic, M. (2023). An Expert System for Redesigning Software for Cloud Applications. \\textit{Expert Systems with Applications, 219, 119673}.",
-    "\\textbf{Yedida, R.}, Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR)}.",
+    "\\textbf{Yedida, R.}, \\& Menzies, T. (2022). How to Improve Deep Learning for Software Analytics (a case study with code smell detection). In \\textit{2022 IEEE/ACM 19th International Conference on Mining Software Repositories (MSR)}.",
     "\\textbf{Yedida, R.}, \\& Menzies, T. (2021). On the Value of Oversampling for Deep Learning in Software Defect Prediction. \\textit{IEEE Transactions on Software Engineering, 48(8), 3103-3116}.",
     "Agrawal, A., Yang, X., Agrawal, R., \\textbf{Yedida, R.}, Shen, X., \\& Menzies, T. (2021). Simpler Hyperparameter Optimization for Software Analytics: Why, How, When?. \\textit{IEEE Transactions on Software Engineering, 48(8), 2939-2954}.",
     "Yang, X., Chen, J., \\textbf{Yedida, R.}, Yu, Z., \\& Menzies, T. (2021). Learning to recognize actionable static code warnings (is intrinsically easy). \\textit{Empirical Software Engineering, 26(3), 1-24}.",
@@ -660,11 +660,11 @@
       "type": "Languages"
     },
     {
-      "name": "Keras",
+      "name": "PyTorch",
       "type": "ML/AI"
     },
     {
-      "name": "PyTorch",
+      "name": "Keras",
       "type": "ML/AI"
     },
     {
@@ -692,7 +692,7 @@
       "type": "Frameworks"
     },
     {
-      "name": "Flask",
+      "name": "FastAPI",
       "type": "Frameworks"
     },
     {
